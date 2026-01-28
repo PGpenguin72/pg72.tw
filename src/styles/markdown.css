@@ -34,6 +34,24 @@
         }
     }
 
+    .icon-cloud {
+        @apply flex flex-wrap gap-2;
+    }
+
+    .icon-cloud a {
+        @apply no-underline;
+        background: none;
+        border-bottom: none;
+        display: inline-flex;
+        line-height: 1;
+        padding: 0;
+    }
+
+    .icon-cloud img {
+        display: block;
+        margin: 0;
+    }
+
     code {
         @apply bg-[var(--inline-code-bg)] text-[var(--inline-code-color)] px-1 py-0.5 rounded-md overflow-hidden;
 
