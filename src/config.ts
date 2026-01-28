@@ -54,7 +54,7 @@ export const navBarConfig: NavBarConfig = {
 
 export const profileConfig: ProfileConfig = {
 	avatar: "assets/images/avatar.png", // 相對於 /src 目錄。如果以 '/' 開頭，則相對於 /public 目錄
-	name: "杜昱叡（PG企鵝）",
+	name: "PGpenguin72",
 	bio: "現居台灣台北市，17歲高中生。網名是PG企鵝喔～",
 	links: [
 		{
