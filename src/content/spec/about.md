@@ -75,28 +75,38 @@
 
 
 ## 會的東東(不是很厲害)
-### 音樂相關：
-* 高音直笛
-* 中音直笛
-* 鋼琴
-* 陶笛4-7孔
-### 資訊相關：
-* Python
-* C++
-* 電腦組裝
-* 資訊安全
-* 網路架設
-* Linux
-* AI操作
-### 魔術方塊：
-* 2階
-* 3階
-* 4階
-* 5階
-* 6階
+* 音樂：直笛、鋼琴、陶笛等等
+
+* 資訊：Python、C++、Linux、簡單組裝電腦與網路設定
+
+* 其他興趣：魔術方塊（2–6階）、偶爾研究一點資安與 AI 應用
 
 ## 各種連結：
 ### 動漫/電影/影集 列表（📺 Simkl）：
 - Profile: https://simkl.com/8174475/
+
+
+
+<a href="https://www.python.org/" title="Python"><img src="https://github.com/get-icon/geticon/raw/master/icons/python.svg" alt="Python" width="21px" height="21px"></a>
+<a href="https://isocpp.org/" title="C++"><img src="https://github.com/get-icon/geticon/raw/master/icons/c-plusplus.svg" alt="C++" width="21px" height="21px"></a>
+<a href="https://www.w3.org/TR/html5/" title="HTML5"><img src="https://github.com/get-icon/geticon/raw/master/icons/html-5.svg" alt="HTML5" width="21px" height="21px"></a>
+<a href="https://www.w3.org/TR/CSS/" title="CSS3"><img src="https://github.com/get-icon/geticon/raw/master/icons/css-3.svg" alt="CSS3" width="21px" height="21px"></a>
+<a href="https://unity3d.com/" title="Unity"><img src="https://github.com/get-icon/geticon/raw/master/icons/unity.svg" alt="Unity" width="21px" height="21px"></a>
+<a href="https://developer.apple.com/swift/" title="Swift"><img src="https://github.com/get-icon/geticon/raw/master/icons/swift.svg" alt="Swift" width="21px" height="21px"></a>
+<a href="https://nodejs.org/" title="Node.js"><img src="https://github.com/get-icon/geticon/raw/master/icons/nodejs-icon.svg" alt="Node.js" width="21px" height="21px"></a>
+<a href="https://reactjs.org/" title="React"><img src="https://github.com/get-icon/geticon/raw/master/icons/react.svg" alt="React" width="21px" height="21px"></a>
+<a href="https://dev.mysql.com/" title="MySQL"><img src="https://github.com/get-icon/geticon/raw/master/icons/mysql.svg" alt="MySQL" width="21px" height="21px"></a>
+<a href="https://www.android.com/" title="Android"><img src="https://github.com/get-icon/geticon/raw/master/icons/android-icon.svg" alt="Android" width="21px" height="21px"></a>
+<a href="https://www.nginx.com/" title="Nginx"><img src="https://github.com/get-icon/geticon/raw/master/icons/nginx-icon.svg" alt="Nginx" width="21px" height="21px"></a>
+<a href="https://www.docker.com/" title="docker"><img src="https://github.com/get-icon/geticon/raw/master/icons/docker-icon.svg" alt="docker" width="21px" height="21px"></a>
+<a href="https://git-scm.com/" title="Git"><img src="https://github.com/get-icon/geticon/raw/master/icons/git-icon.svg" alt="Git" width="21px" height="21px"></a>
+<a href="https://github.com/" title="Github"><img src="https://github.com/get-icon/geticon/raw/master/icons/github-icon.svg" alt="Github" width="21px" height="21px"></a>
+<a href="https://www.cloudflare.com/" title="Cloudflare"><img src="https://github.com/get-icon/geticon/raw/master/icons/cloudflare.svg" alt="Cloudflare" width="21px" height="21px"></a>
+<a href="https://vercel.com/" title="Vercel"><img src="https://github.com/get-icon/geticon/raw/master/icons/vercel.svg" alt="Vercel" width="21px" height="21px"></a>
+<a href="https://code.visualstudio.com/" title="Visual Studio Code"><img src="https://github.com/get-icon/geticon/raw/master/icons/visual-studio-code.svg" alt="Visual Studio Code" width="21px" height="21px"></a>
+<a href="https://discordapp.com/" title="Discord"><img src="https://github.com/get-icon/geticon/raw/master/icons/discord.svg" alt="Discord" width="21px" height="21px"></a>
+<a href="https://www.adobe.com/products/photoshop.html" title="Adobe Photoshop"><img src="https://github.com/get-icon/geticon/raw/master/icons/adobe-photoshop.svg" alt="Adobe Photoshop" width="21px" height="21px"></a>
+<a href="https://www.adobe.com/products/illustrator.html" title="Adobe Illustrator"><img src="https://github.com/get-icon/geticon/raw/master/icons/adobe-illustrator.svg" alt="Adobe Illustrator" width="21px" height="21px"></a>
+<a href="https://www.linuxfoundation.org/" title="Linux"><img src="https://github.com/get-icon/geticon/raw/master/icons/linux-tux.svg" alt="Linux" width="21px" height="21px"></a>
 
 
