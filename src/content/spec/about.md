@@ -84,8 +84,7 @@
 ## 各種連結：
 ### Github ：
 - Profile: https://github.com/PGpenguin72
-### 動漫/電影/影集 列表（📺 Simkl）：
-- Profile: https://simkl.com/8174475/
+### [動漫/電影/影集 列表（📺 Simkl）](https://simkl.com/8174475/)
 
 
 <div class="icon-cloud">
