@@ -8,33 +8,33 @@ import type {
 import { LinkPreset } from "./types/config";
 
 export const siteConfig: SiteConfig = {
-	title: "Fuwari",
-	subtitle: "Demo Site",
-	lang: "en", // Language code, e.g. 'en', 'zh_CN', 'ja', etc.
+	title: "PGpenguin72",
+	subtitle: "GuGuGaGa",
+	lang: "zh_TW", // 語言代碼，例如 'en', 'zh_CN', 'ja' 等
 	themeColor: {
-		hue: 250, // Default hue for the theme color, from 0 to 360. e.g. red: 0, teal: 200, cyan: 250, pink: 345
-		fixed: false, // Hide the theme color picker for visitors
+		hue: 235, // 主題顏色的默認色調，從 0 到 360。例如紅色: 0, 青色: 200, 藍綠色: 250, 粉紅色: 345
+		fixed: false, // 隱藏訪客的主題顏色選擇器
 	},
 	banner: {
-		enable: false,
-		src: "assets/images/demo-banner.png", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
-		position: "center", // Equivalent to object-position, only supports 'top', 'center', 'bottom'. 'center' by default
+		enable: true,
+		src: "assets/images/star1.png", // 相對於 /src 目錄。如果以 '/' 開頭，則相對於 /public 目錄
+		position: "center", // 等同於 object-position，只支援 'top', 'center', 'bottom'。默認為 'center'
 		credit: {
-			enable: false, // Display the credit text of the banner image
-			text: "", // Credit text to be displayed
-			url: "", // (Optional) URL link to the original artwork or artist's page
+			enable: true, // 顯示橫幅圖片的版權文字
+			text: "iPhone 15 Pro · PGpenguin72", // 要顯示的版權文字
+			url: "", // （可選）指向原作品或藝術家頁面的 URL 連結
 		},
 	},
 	toc: {
-		enable: true, // Display the table of contents on the right side of the post
-		depth: 2, // Maximum heading depth to show in the table, from 1 to 3
+		enable: true, // 在文章右側顯示目錄
+		depth: 2, // 目錄中顯示的最大標題深度，從 1 到 3
 	},
 	favicon: [
-		// Leave this array empty to use the default favicon
+		// 將此陣列留空以使用默認 favicon
 		// {
-		//   src: '/favicon/icon.png',    // Path of the favicon, relative to the /public directory
-		//   theme: 'light',              // (Optional) Either 'light' or 'dark', set only if you have different favicons for light and dark mode
-		//   sizes: '32x32',              // (Optional) Size of the favicon, set only if you have favicons of different sizes
+		//   src: '/favicon/icon.png',    // Favicon 的路徑，相對於 /public 目錄
+		//   theme: 'light',              // （可選）'light' 或 'dark'，僅在您有不同模式的 favicon 時設定
+		//   sizes: '32x32',              // （可選）Favicon 的大小，僅在您有不同大小的 favicon 時設定
 		// }
 	],
 };
@@ -46,33 +46,38 @@ export const navBarConfig: NavBarConfig = {
 		LinkPreset.About,
 		{
 			name: "GitHub",
-			url: "https://github.com/saicaca/fuwari", // Internal links should not include the base path, as it is automatically added
-			external: true, // Show an external link icon and will open in a new tab
+			url: "https://github.com/PGpenguin72", // 內部連結不應包含基礎路徑，因為它會自動添加
+			external: true, // 顯示外部連結圖標，並在新標籤頁中開啟
 		},
 	],
 };
 
 export const profileConfig: ProfileConfig = {
-	avatar: "assets/images/demo-avatar.png", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
-	name: "Lorem Ipsum",
-	bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+	avatar: "assets/images/avatar.png", // 相對於 /src 目錄。如果以 '/' 開頭，則相對於 /public 目錄
+	name: "杜昱叡（PG企鵝）",
+	bio: "現居台灣台北市，17歲高中生。網名是PG企鵝喔～",
 	links: [
 		{
-			name: "Twitter",
-			icon: "fa6-brands:twitter", // Visit https://icones.js.org/ for icon codes
-			// You will need to install the corresponding icon set if it's not already included
+			name: "Discord",
+			icon: "ic:baseline-discord",
+			url: "https://discord.com/users/609189792571457550",
+		},
+		{
+			name: "Instagram",
+			icon: "mdi:instagram", // 訪問 https://icones.js.org/ 以獲取圖標代碼
+			// 如果尚未包含，您需要安裝相應的圖標集
 			// `pnpm add @iconify-json/<icon-set-name>`
-			url: "https://twitter.com",
+			url: "https://www.instagram.com/pg_penguin_72/",
 		},
 		{
 			name: "Steam",
 			icon: "fa6-brands:steam",
-			url: "https://store.steampowered.com",
+			url: "https://steamcommunity.com/id/PGpenguin72/",
 		},
 		{
 			name: "GitHub",
 			icon: "fa6-brands:github",
-			url: "https://github.com/saicaca/fuwari",
+			url: "https://github.com/PGpenguin72",
 		},
 	],
 };
@@ -84,7 +89,7 @@ export const licenseConfig: LicenseConfig = {
 };
 
 export const expressiveCodeConfig: ExpressiveCodeConfig = {
-	// Note: Some styles (such as background color) are being overridden, see the astro.config.mjs file.
-	// Please select a dark theme, as this blog theme currently only supports dark background color
+	// 注意：某些樣式（如背景顏色）正在被覆蓋，請參閱 astro.config.mjs 文件。
+	// 請選擇深色主題，因為此部落格主題目前僅支援深色背景顏色
 	theme: "github-dark",
 };
