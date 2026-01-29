@@ -2,7 +2,7 @@
 title: ZeroJudge 題目練習社群：不再獨自奮戰，與開源大神一起進化！
 published: 2025-12-05
 description: 每天一題 ZeroJudge，結合 GitHub 開源實作，讓你的程式能力光速成長。
-image: ./cover.png
+image: "./cover.png"
 tags: [ZeroJudge, Coding, APCS, GitHub]
 category: 程式
 draft: false
