@@ -33,7 +33,7 @@ export const siteConfig: SiteConfig = {
 		// 將此陣列留空以使用默認 favicon
 		{
 			src: "/favicon/avatar.png", // Favicon 的路徑，相對於 /public 目錄
-			theme: "light", // （可選）'light' 或 'dark'，僅在您有不同模式的 favicon 時設定
+			//theme: "light", // （可選）'light' 或 'dark'，僅在您有不同模式的 favicon 時設定
 			sizes: "32x32", // （可選）Favicon 的大小，僅在您有不同大小的 favicon 時設定
 		},
 	],
