@@ -23,7 +23,7 @@ lang: ''
 | 拍攝時間  | 2025/12/21 凌晨00:52:19 |
 | 來源     | [pg72.tw](https://pg72.tw/star_of_syue) |
 | 作者     | PGpenguin72 |
-| 檔案格式  | PNG |
+| 檔案格式  | [PNG](http://file.pg72.tw/share/qlqvRJdm)、[DNG(Raw)](http://file.pg72.tw/share/Ul8hAZaM) |
 | 解析度    | 4032 × 3024 像素。|
 
 ---
