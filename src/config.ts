@@ -13,7 +13,7 @@ export const siteConfig: SiteConfig = {
 	lang: "zh_TW", // 語言代碼，例如 'en', 'zh_CN', 'ja' 等
 	themeColor: {
 		hue: 235, // 主題顏色的默認色調，從 0 到 360。例如紅色: 0, 青色: 200, 藍綠色: 250, 粉紅色: 345
-		fixed: false, // 隱藏訪客的主題顏色選擇器
+		fixed: true, // 隱藏訪客的主題顏色選擇器
 	},
 	banner: {
 		enable: true,
@@ -31,11 +31,11 @@ export const siteConfig: SiteConfig = {
 	},
 	favicon: [
 		// 將此陣列留空以使用默認 favicon
-		// {
-		//   src: '/favicon/icon.png',    // Favicon 的路徑，相對於 /public 目錄
-		//   theme: 'light',              // （可選）'light' 或 'dark'，僅在您有不同模式的 favicon 時設定
-		//   sizes: '32x32',              // （可選）Favicon 的大小，僅在您有不同大小的 favicon 時設定
-		// }
+		{
+			src: "/favicon/avatar.png", // Favicon 的路徑，相對於 /public 目錄
+			theme: "light", // （可選）'light' 或 'dark'，僅在您有不同模式的 favicon 時設定
+			sizes: "32x32", // （可選）Favicon 的大小，僅在您有不同大小的 favicon 時設定
+		},
 	],
 };
 

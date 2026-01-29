@@ -2,7 +2,7 @@
 title: Hello world
 published: 2026-01-29
 description: 向世界說你好:D
-tags: [Hello]
+tags: [Hello, Python, C++]
 category: Blog
 draft: false
 ---
@@ -16,7 +16,7 @@ print("Hello world")
 
 # C++
 ```cpp
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
 
 int main(){
