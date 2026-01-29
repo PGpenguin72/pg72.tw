@@ -48,8 +48,12 @@
     }
 
     .icon-cloud img {
-        display: block;
+        display: square;
         margin: 0;
+        width: 32px;
+        height: 32px;
+        max-width: none;
+        object-fit: contain;
     }
 
     code {
