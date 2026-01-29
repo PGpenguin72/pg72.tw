@@ -22,7 +22,7 @@ export const siteConfig: SiteConfig = {
 		credit: {
 			enable: true, // 顯示橫幅圖片的版權文字
 			text: "iPhone 15 Pro · PGpenguin72", // 要顯示的版權文字
-			url: "", // （可選）指向原作品或藝術家頁面的 URL 連結
+			url: "https://pg72.tw/posts/star_of_syue/", // （可選）指向原作品或藝術家頁面的 URL 連結
 		},
 	},
 	toc: {
