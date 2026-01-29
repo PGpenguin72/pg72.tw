@@ -1,6 +1,6 @@
 ---
 title: 雪山之星
-published: 2026-01-29
+published: 2025-12-21
 description: '一個很好看的星空，反正就點進來看看吧:D'
 image: './cover.png'
 tags: ["星空", "iPhone"]
