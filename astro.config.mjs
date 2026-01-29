@@ -100,7 +100,18 @@ export default defineConfig({
 			}
 		}),
         svelte(),
-		sitemap(),
+		sitemap({
+			// Filter out draft posts from sitemap
+			filter: (page) => {
+				// Always include non-post pages
+				if (!page.includes('/posts/')) return true;
+				// Exclude draft pages if needed
+				return true;
+			},
+			changefreq: 'weekly',
+			priority: 0.7,
+			entryLimit: 45000,
+		}),
 	],
 	markdown: {
 		remarkPlugins: [
