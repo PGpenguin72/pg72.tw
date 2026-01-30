@@ -16,6 +16,20 @@ const { Content } = await render(linksPost);
 
 const links = [
 	{
+		name: "Wikipedia",
+		icon: "simple-icons:wikipedia",
+		url: "https://zh.wikipedia.org/wiki/User:PGpenguin72",
+		handle: "PGpenguin72",
+		meta: ["一個維基百科的鏈結"],
+	},
+	{
+		name: "LinkedIn",
+		icon: "fa6-brands:linkedin",
+		url: "https://www.linkedin.com/in/%E6%98%B1%E5%8F%A1-%E6%9D%9C-2658443a9/",
+		handle: "杜昱叡",
+		meta: ["啊這個沒在用，反正就註冊看看"],
+	},
+	{
 		name: "GitHub",
 		icon: "fa6-brands:github",
 		url: "https://github.com/PGpenguin72",
@@ -30,46 +44,11 @@ const links = [
 		meta: ["長年活躍在這裡"],
 	},
 	{
-		name: "Telegram",
-		icon: "fa6-brands:telegram",
-		url: "https://t.me/PGpenguin72",
-		handle: "PGpenguin72",
-		meta: ["是小飛機喔:D"],
-	},
-	{
-		name: "WeChat",
-		icon: "simple-icons:wechat",
-		url: "https://u.wechat.com/kAKmgLTrKDw3TWW1eKU-KfI?s=2",
-		handle: "PGpenguin72",
-		meta: ["去中國的時候很好用:D"],
-	},
-	{
-		name: "LINE",
-		icon: "simple-icons:line",
-		url: "https://line.me/ti/p/3qCE7EMURS",
-		handle: "pg_penguin_72",
-		meta: ["其實很少用這平台哈"],
-	},
-	{
-		name: "QQ",
-		icon: "simple-icons:qq",
-		url: "https://qm.qq.com/q/kfM0W1bYgo",
-		handle: "3110348258",
-		meta: ["QQ家的都是一些酷群組喔～"],
-	},
-	{
 		name: "Instagram",
 		icon: "fa6-brands:instagram",
 		url: "https://www.instagram.com/pg_penguin_72/",
 		handle: "@pg_penguin_72",
 		meta: ["就...IG啊"],
-	},
-	{
-		name: "Twitter",
-		icon: "fa6-brands:twitter",
-		url: "https://twitter.com/PGpenguin72",
-		handle: "@PGpenguin72",
-		meta: ["用來看點...酷酷的東東"],
 	},
 	{
 		name: "Threads",
@@ -84,6 +63,41 @@ const links = [
 		url: "https://www.facebook.com/pgpenguin72",
 		handle: "企鵝",
 		meta: ["一個老人平台"],
+	},
+	{
+		name: "LINE",
+		icon: "simple-icons:line",
+		url: "https://line.me/ti/p/3qCE7EMURS",
+		handle: "pg_penguin_72",
+		meta: ["其實很少用這平台哈"],
+	},
+	{
+		name: "WeChat",
+		icon: "simple-icons:wechat",
+		url: "https://u.wechat.com/kAKmgLTrKDw3TWW1eKU-KfI?s=2",
+		handle: "PGpenguin72",
+		meta: ["去中國的時候很好用:D"],
+	},
+	{
+		name: "QQ",
+		icon: "simple-icons:qq",
+		url: "https://qm.qq.com/q/kfM0W1bYgo",
+		handle: "3110348258",
+		meta: ["QQ家的都是一些酷群組喔～"],
+	},
+	{
+		name: "Telegram",
+		icon: "fa6-brands:telegram",
+		url: "https://t.me/PGpenguin72",
+		handle: "PGpenguin72",
+		meta: ["是小飛機喔:D"],
+	},
+	{
+		name: "Twitter",
+		icon: "fa6-brands:twitter",
+		url: "https://twitter.com/PGpenguin72",
+		handle: "@PGpenguin72",
+		meta: ["用來看點...酷酷的東東"],
 	},
 	{
 		name: "YouTube",
@@ -122,7 +136,14 @@ const links = [
 		meta: ["分享日常的地方"],
 	},
 	{
-		name: "pixiv",
+		name: "Simkl",
+		icon: "simple-icons:simkl",
+		url: "https://simkl.com/8174475/",
+		handle: "PGpenguin72",
+		meta: ["可以知道我都在看啥動漫電影喔"],
+	},
+	{
+		name: "Pixiv",
 		icon: "simple-icons:pixiv",
 		url: "https://www.pixiv.net/users/82048736",
 		handle: "82048736",
@@ -156,28 +177,7 @@ const links = [
 		handle: "penguin5325",
 		meta: ["還蠻想改ID的但好貴:("],
 	},
-	{
-		name: "Simkl",
-		icon: "simple-icons:simkl",
-		url: "https://simkl.com/8174475/",
-		handle: "PGpenguin72",
-		meta: ["可以知道我都在看啥動漫電影喔"],
-	},
-	{
-		name: "Wikipedia",
-		icon: "simple-icons:wikipedia",
-		url: "https://zh.wikipedia.org/wiki/User:PGpenguin72",
-		handle: "PGpenguin72",
-		meta: ["一個維基百科的鏈結"],
-	},
-	{
-		name: "LinkedIn",
-		icon: "fa6-brands:linkedin",
-		url: "https://www.linkedin.com/in/%E6%98%B1%E5%8F%A1-%E6%9D%9C-2658443a9/",
-		handle: "杜昱叡",
-		meta: ["啊這個沒在用，反正就註冊看看"],
-	},
-
+	
 ];
 ---
 <MainGridLayout title={i18n(I18nKey.links)} description={i18n(I18nKey.links)}>
