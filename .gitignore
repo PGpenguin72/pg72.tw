@@ -29,3 +29,4 @@ yarn.lock
 # ide
 .idea
 *.iml
+src/pages/404.astro
