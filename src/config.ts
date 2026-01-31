@@ -47,7 +47,7 @@ export const navBarConfig: NavBarConfig = {
 		LinkPreset.About,
 		{
 			name: "GitHub",
-			url: "https://github.com/PGpenguin72", // 內部連結不應包含基礎路徑，因為它會自動添加
+			url: "https://github.com/PGpenguin72/pg72.tw", // 內部連結不應包含基礎路徑，因為它會自動添加
 			external: true, // 顯示外部連結圖標，並在新標籤頁中開啟
 		},
 	],
@@ -59,26 +59,24 @@ export const profileConfig: ProfileConfig = {
 	bio: "現居台灣台北市，17歲高中生。網名是PG企鵝喔～",
 	links: [
 		{
+			name: "GitHub",
+			icon: "fa6-brands:github",
+			url: "https://github.com/PGpenguin72",
+		},
+		{
+			name: "Email",
+			icon: "fa6-solid:envelope",
+			url: "mailto:hi@pg72.tw",
+		},
+		{
 			name: "Discord",
-			icon: "ic:baseline-discord",
+			icon: "fa6-brands:discord",
 			url: "https://discord.com/users/609189792571457550",
 		},
 		{
 			name: "Instagram",
-			icon: "mdi:instagram", // 訪問 https://icones.js.org/ 以獲取圖標代碼
-			// 如果尚未包含，您需要安裝相應的圖標集
-			// `pnpm add @iconify-json/<icon-set-name>`
+			icon: "fa6-brands:instagram",
 			url: "https://www.instagram.com/pg_penguin_72/",
-		},
-		{
-			name: "Steam",
-			icon: "fa6-brands:steam",
-			url: "https://steamcommunity.com/id/PGpenguin72/",
-		},
-		{
-			name: "GitHub",
-			icon: "fa6-brands:github",
-			url: "https://github.com/PGpenguin72",
 		},
 	],
 };
