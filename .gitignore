@@ -30,3 +30,4 @@ yarn.lock
 .idea
 *.iml
 src/pages/404.astro
+src/content/SDlearning-11401
