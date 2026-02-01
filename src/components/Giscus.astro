@@ -1,0 +1,79 @@
+---
+interface Props {
+	class?: string;
+	style?: string;
+}
+
+const className = Astro.props.class;
+const style = Astro.props.style;
+---
+
+<section class:list={["card-base rounded-[var(--radius-large)] overflow-hidden", className]} style={style}>
+    <div class="px-6 md:px-9 pt-5 pb-4">
+        <div class="font-bold text-lg text-neutral-900 dark:text-neutral-100">留言區</div>
+    </div>
+    <div class="border-t border-black/10 dark:border-white/10"></div>
+    <div class="px-4 md:px-6 py-5">
+        <div id="giscus-container" class="giscus-wrap"></div>
+    </div>
+</section>
+
+<script is:inline>
+	const giscusConfig = {
+		src: "https://giscus.app/client.js",
+		repo: "PGpenguin72/pg72.tw",
+		repoId: "R_kgDORC0FKQ",
+		category: "Show and tell",
+		categoryId: "DIC_kwDORC0FKc4C1t1S",
+		mapping: "pathname",
+		strict: "0",
+		reactionsEnabled: "0",
+		emitMetadata: "0",
+		inputPosition: "bottom",
+		theme: "preferred_color_scheme",
+		lang: "zh-TW",
+	};
+
+	function createGiscusScript() {
+		const script = document.createElement("script");
+		script.src = giscusConfig.src;
+		script.async = true;
+		script.crossOrigin = "anonymous";
+		script.setAttribute("data-repo", giscusConfig.repo);
+		script.setAttribute("data-repo-id", giscusConfig.repoId);
+		script.setAttribute("data-category", giscusConfig.category);
+		script.setAttribute("data-category-id", giscusConfig.categoryId);
+		script.setAttribute("data-mapping", giscusConfig.mapping);
+		script.setAttribute("data-strict", giscusConfig.strict);
+		script.setAttribute("data-reactions-enabled", giscusConfig.reactionsEnabled);
+		script.setAttribute("data-emit-metadata", giscusConfig.emitMetadata);
+		script.setAttribute("data-input-position", giscusConfig.inputPosition);
+		script.setAttribute("data-theme", giscusConfig.theme);
+		script.setAttribute("data-lang", giscusConfig.lang);
+		return script;
+	}
+
+	function loadGiscus() {
+		const container = document.getElementById("giscus-container");
+		if (!container) return;
+		container.innerHTML = "";
+		container.appendChild(createGiscusScript());
+	}
+
+	loadGiscus();
+
+	if (window?.swup?.hooks) {
+		window.swup.hooks.on("page:view", loadGiscus);
+	} else {
+		document.addEventListener("swup:enable", () => {
+			window?.swup?.hooks?.on("page:view", loadGiscus);
+		});
+	}
+</script>
+
+<style is:global>
+	.giscus,
+	.giscus-frame {
+		width: 100%;
+	}
+</style>

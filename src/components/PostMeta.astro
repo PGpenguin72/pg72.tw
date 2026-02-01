@@ -36,7 +36,7 @@ const className = Astro.props.class;
     </div>
 
     <!-- update date -->
-    {!hideUpdateDate && updated && updated.getTime() !== published.getTime() && (
+    {!hideUpdateDate && updated && (
         <div class="flex items-center">
             <div class="meta-icon"
             >

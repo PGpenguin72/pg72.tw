@@ -18,4 +18,56 @@ const currentYear = new Date().getFullYear();
         <a class="transition link text-[var(--primary)] font-medium" target="_blank" href="https://astro.build">Astro</a> &
         <a class="transition link text-[var(--primary)] font-medium" target="_blank" href="https://github.com/saicaca/fuwari">Fuwari</a>
     </div>
+    <div id="total-views-wrapper" class="transition text-50 text-xs text-center mt-3 hidden">
+        總瀏覽數：<span id="total-views-count">-</span> 次
+    </div>
 </div>
+
+<script is:inline>
+	const viewsWrapper = document.getElementById("total-views-wrapper");
+	const viewsCount = document.getElementById("total-views-count");
+
+	function isHomePage() {
+		if (typeof window === "undefined") return false;
+		const path = window.location.pathname || "/";
+		return path === "/" || path === "/index.html";
+	}
+
+	async function updateTotalViews() {
+		if (!viewsWrapper || !viewsCount) return;
+		if (!isHomePage()) {
+			viewsWrapper.classList.add("hidden");
+			return;
+		}
+		viewsWrapper.classList.remove("hidden");
+		try {
+			const response = await fetch("https://api.counterapi.dev/v2/pg72tw/total-views/up");
+			const data = await response.json();
+			const rawCount =
+				typeof data?.data?.up_count === "number"
+					? data.data.up_count
+					: typeof data?.count === "number"
+						? data.count
+						: typeof data?.value === "number"
+							? data.value
+							: typeof data?.data === "number"
+								? data.data
+								: null;
+			if (rawCount !== null) {
+				viewsCount.textContent = new Intl.NumberFormat("en-US").format(rawCount);
+			}
+		} catch (error) {
+			// Keep the placeholder if the request fails.
+		}
+	}
+
+	updateTotalViews();
+
+	if (window?.swup?.hooks) {
+		window.swup.hooks.on("page:view", updateTotalViews);
+	} else {
+		document.addEventListener("swup:enable", () => {
+			window?.swup?.hooks?.on("page:view", updateTotalViews);
+		});
+	}
+</script>

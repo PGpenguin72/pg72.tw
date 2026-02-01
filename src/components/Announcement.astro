@@ -1,0 +1,55 @@
+---
+import WidgetLayout from "./widget/WidgetLayout.astro";
+
+type AnnouncementItem = {
+	title: string;
+	href?: string;
+	date?: string;
+};
+
+interface Props {
+	items?: AnnouncementItem[];
+	class?: string;
+	style?: string;
+}
+
+const items =
+	Astro.props.items ??
+	[
+        {
+			title: "內容持續更新中",
+			date: "2026-02-01",
+		},
+		{
+			title: "pg72.tw正式開站啦！",
+			date: "2026-01-29",
+		},
+	];
+
+const className = Astro.props.class;
+const style = Astro.props.style;
+---
+
+<WidgetLayout name="公告" id="announcements" class={className} style={style}>
+    {items.length === 0 ? (
+        <div class="text-sm text-black/40 dark:text-white/40">目前沒有公告</div>
+    ) : (
+        <ul class="flex flex-col gap-2 text-sm text-75">
+            {items.map((item) => (
+                <li class="flex flex-wrap items-center gap-2">
+                    <span class="w-1.5 h-1.5 rounded-full bg-[var(--primary)]/70"></span>
+                    {item.href ? (
+                        <a class="link text-[var(--primary)]" href={item.href}>
+                            {item.title}
+                        </a>
+                    ) : (
+                        <span>{item.title}</span>
+                    )}
+                    {item.date && (
+                        <span class="text-xs text-black/40 dark:text-white/40">({item.date})</span>
+                    )}
+                </li>
+            ))}
+        </ul>
+    )}
+</WidgetLayout>

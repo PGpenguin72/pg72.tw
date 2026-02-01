@@ -1,6 +1,7 @@
 ---
 title: 2026/01/03 APCS 臨時抱佛腳筆記
 published: 2026-01-03
+updated: 2026-01-03
 description: '反正這裡會幫忙複習APCS觀念會用到的Python東西，還有一些題目可以練習。'
 image: ''
 tags: ["APCS", "Python"]

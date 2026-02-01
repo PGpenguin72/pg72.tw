@@ -1,6 +1,7 @@
 ---
 title: 高一下自主學習報告
 published: 2025-06-19
+updated: 2025-06-19
 description: '從零開始製作一隻 Discord Bot -- 北極企鵝'
 image: ""
 tags: ["自主學習", "Discord", "Python", "Discord.py", "JSON"]
@@ -308,7 +309,7 @@ lang: ''
 <blockquote>
 <p>我的Instagram: @pg_penguin_72</p>
 </blockquote>
-</div><div class="col"></div><div class="col"><p><img src="./pg72.png" alt="我的Discord個人資料截圖" class="img-lg"></p>
+</div><div class="col"></div><div class="col"><p><img src="./assets/pg72.png" alt="我的Discord個人資料截圖" class="img-lg"></p>
 </div></div></div>
 <footer class="slide-footer">
   <span class="left">https://pg72.tw/</span>
@@ -336,7 +337,7 @@ lang: ''
 </li>
 </ul>
 </div><div class="col"><!--newlines: 7-->
-<p><img src="./discord.png" alt="Discord icon"></p>
+<p><img src="./assets/discord.png" alt="Discord icon"></p>
 </div></div></div>
 <footer class="slide-footer">
   <span class="left">https://pg72.tw/</span>
@@ -349,7 +350,7 @@ lang: ''
 <li>製作一隻Discord機器人 ✅</li>
 </ul>
 <h3>製作動機</h3>
-<p><img src="./dev2.png" alt="主要的北極企鵝的個人資料圖"></p>
+<p><img src="./assets/dev2.png" alt="主要的北極企鵝的個人資料圖"></p>
 </div>
 <footer class="slide-footer">
   <span class="left">https://pg72.tw/</span>
@@ -365,16 +366,16 @@ lang: ''
 <li>🌰. 5100多行代碼都是自己寫的！（複製複製貼上貼上:D）</li>
 </ul>
 <h1>給你們看一下我創了幾隻企鵝出來</h1>
-<p><img src="./main2.png" alt="主要的北極企鵝的個人資料圖"></p>
+<p><img src="./assets/main2.png" alt="主要的北極企鵝的個人資料圖"></p>
 </div>
 <footer class="slide-footer">
   <span class="left">https://pg72.tw/</span>
   <span class="center"><span class="noice">自主學習簡報</span> @pg_penguin_72</span>
   <span class="right">5 / 31</span>
 </footer></section>
-<section class="slide fs-3"><div class="slide-inner"><!--font_size: 3--><div class="columns cols-2"><div class="col"><p><img src="./a2.png" alt="北極企鵝Alpha的個人資料圖"></p>
-</div><div class="col"><p><img src="./b2.png" alt="北極企鵝Beta的個人資料圖"></p>
-</div></div><p><img src="./o2.png" alt="北極企鵝Omega的個人資料圖"></p>
+<section class="slide fs-3"><div class="slide-inner"><!--font_size: 3--><div class="columns cols-2"><div class="col"><p><img src="./assets/a2.png" alt="北極企鵝Alpha的個人資料圖"></p>
+</div><div class="col"><p><img src="./assets/b2.png" alt="北極企鵝Beta的個人資料圖"></p>
+</div></div><p><img src="./assets/o2.png" alt="北極企鵝Omega的個人資料圖"></p>
 </div>
 <footer class="slide-footer">
   <span class="left">https://pg72.tw/</span>
@@ -382,8 +383,8 @@ lang: ''
   <span class="right">6 / 31</span>
 </footer></section>
 <section class="slide fs-3"><div class="slide-inner"><!--font_size: 3-->
-<!--new_lines: 5--><div class="columns cols-2"><div class="col"><p><img src="./g2.png" alt="北極企鵝Gamma的個人資料圖"></p>
-</div><div class="col"><p><img src="./d2.png" alt="北極企鵝Delta的個人資料圖"></p>
+<!--new_lines: 5--><div class="columns cols-2"><div class="col"><p><img src="./assets/g2.png" alt="北極企鵝Gamma的個人資料圖"></p>
+</div><div class="col"><p><img src="./assets/d2.png" alt="北極企鵝Delta的個人資料圖"></p>
 </div></div></div>
 <footer class="slide-footer">
   <span class="left">https://pg72.tw/</span>
@@ -528,7 +529,7 @@ lang: ''
 <ol>
 <li>每日簽到功能</li>
 </ol>
-<p><img src="./sign.png" alt="簽到實際演示圖片"></p>
+<p><img src="./assets/sign.png" alt="簽到實際演示圖片"></p>
 </div>
 <footer class="slide-footer">
   <span class="left">https://pg72.tw/</span>
@@ -540,7 +541,7 @@ lang: ''
 <ol>
 <li>每日簽到功能</li>
 </ol>
-<p><img src="./sign2.png" alt="簽到實際演示圖片"></p>
+<p><img src="./assets/sign2.png" alt="簽到實際演示圖片"></p>
 </div>
 <footer class="slide-footer">
   <span class="left">https://pg72.tw/</span>
@@ -552,7 +553,7 @@ lang: ''
 <ol>
 <li>每日簽到功能</li>
 </ol>
-<p><img src="./rank.png" alt="簽到實際演示圖片"></p>
+<p><img src="./assets/rank.png" alt="簽到實際演示圖片"></p>
 </div>
 <footer class="slide-footer">
   <span class="left">https://pg72.tw/</span>
@@ -581,7 +582,7 @@ lang: ''
 <ol start="2">
 <li>跨伺服器文字聊天</li>
 </ol>
-<p><img src="./2.png" alt="跨群聊天實際演示圖片"></p>
+<p><img src="./assets/2.png" alt="跨群聊天實際演示圖片"></p>
 </div>
 <footer class="slide-footer">
   <span class="left">https://pg72.tw/</span>
@@ -610,7 +611,7 @@ lang: ''
 <ol start="3">
 <li>包裹追蹤器(本功能實現由Track.tw官方提供API串接)</li>
 </ol>
-<p><img src="./package1.png" alt="包裹追蹤的實際功能圖片"></p>
+<p><img src="./assets/package1.png" alt="包裹追蹤的實際功能圖片"></p>
 </div>
 <footer class="slide-footer">
   <span class="left">https://pg72.tw/</span>
@@ -672,7 +673,7 @@ lang: ''
   <span class="right">21 / 31</span>
 </footer></section>
 <section class="slide "><div class="slide-inner"><h2>經驗分享</h2>
-<p><img src="./IDK.png" alt="蜜月期popo的梗圖，家寧說“我也不知道”的影片截圖。"></p>
+<p><img src="./assets/IDK.png" alt="蜜月期popo的梗圖，家寧說“我也不知道”的影片截圖。"></p>
 </div>
 <footer class="slide-footer">
   <span class="left">https://pg72.tw/</span>
@@ -767,7 +768,7 @@ Bot is ready!
   <span class="right">27 / 31</span>
 </footer></section>
 <section class="slide "><div class="slide-inner"><h2>心得</h2>
-<p><img src="./s0.png" alt="簡報程式碼截圖1"></p>
+<p><img src="./assets/s0.png" alt="簡報程式碼截圖1"></p>
 </div>
 <footer class="slide-footer">
   <span class="left">https://pg72.tw/</span>
@@ -780,7 +781,7 @@ ArcantStudio（極區工作室）。</p>
 <!-- new_line -->
 <p>這間工作室是一群志同道合的人組成的，
 目前沒有盈利。</p>
-</div><div class="col"><p><img src="./ac.png" alt="極區工作室的圖標"></p>
+</div><div class="col"><p><img src="./assets/ac.png" alt="極區工作室的圖標"></p>
 </div></div></div>
 <footer class="slide-footer">
   <span class="left">https://pg72.tw/</span>
@@ -800,7 +801,7 @@ ArcantStudio（極區工作室）。</p>
 <p>希望明年暑假上架到Steam!</p>
 <!-- new_line -->
 <p>只要你對開發遊戲或這個專案有興趣，</p>
-</div><div class="col"><p><img src="./rs.png" alt="溶蝕的遊戲圖標"></p>
+</div><div class="col"><p><img src="./assets/rs.png" alt="溶蝕的遊戲圖標"></p>
 </div></div></div>
 <footer class="slide-footer">
   <span class="left">https://pg72.tw/</span>
@@ -822,7 +823,7 @@ ArcantStudio（極區工作室）。</p>
 <p>只要你對開發遊戲或這個專案有興趣，
 歡迎可以掃描這個QRcode來加入我們喔！</p>
 <h1>&gt;謝謝大家聽我的分享！</h1>
-</div><div class="col"><p><img src="./qr00.png" alt="一個掃了可以填寫表單的QRcode"></p>
+</div><div class="col"><p><img src="./assets/qr00.png" alt="一個掃了可以填寫表單的QRcode"></p>
 <!--font_size: 3--></div></div></div>
 <footer class="slide-footer">
   <span class="left">https://pg72.tw/</span>
