@@ -36,17 +36,19 @@ const style = Astro.props.style;
     ) : (
         <ul class="flex flex-col gap-2 text-sm text-75">
             {items.map((item) => (
-                <li class="flex flex-wrap items-center gap-2">
-                    <span class="w-1.5 h-1.5 rounded-full bg-[var(--primary)]/70"></span>
-                    {item.href ? (
-                        <a class="link text-[var(--primary)]" href={item.href}>
-                            {item.title}
-                        </a>
-                    ) : (
-                        <span>{item.title}</span>
-                    )}
+                <li class="flex items-center justify-between gap-3">
+                    <div class="flex min-w-0 items-center gap-2">
+                        <span class="w-1.5 h-1.5 rounded-full bg-[var(--primary)]/70"></span>
+                        {item.href ? (
+                            <a class="link text-[var(--primary)]" href={item.href}>
+                                {item.title}
+                            </a>
+                        ) : (
+                            <span>{item.title}</span>
+                        )}
+                    </div>
                     {item.date && (
-                        <span class="text-xs text-black/40 dark:text-white/40">({item.date})</span>
+                        <span class="shrink-0 text-xs text-black/40 dark:text-white/40">({item.date})</span>
                     )}
                 </li>
             ))}

@@ -53,8 +53,9 @@ export enum LinkPreset {
 
 export type NavBarLink = {
 	name: string;
-	url: string;
+	url?: string;
 	external?: boolean;
+	children?: NavBarLink[];
 };
 
 export type NavBarConfig = {

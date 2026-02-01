@@ -44,7 +44,19 @@ export const navBarConfig: NavBarConfig = {
 		LinkPreset.Home,
 		LinkPreset.Archive,
 		LinkPreset.Links,
-		LinkPreset.About,
+		{
+			name: "關於",
+			children: [
+				{
+					name: "關於我",
+					url: "/about/",
+				},
+				{
+					name: "裝置",
+					url: "/device/",
+				},
+			],
+		},
 		{
 			name: "GitHub",
 			url: "https://github.com/PGpenguin72/pg72.tw", // 內部連結不應包含基礎路徑，因為它會自動添加
