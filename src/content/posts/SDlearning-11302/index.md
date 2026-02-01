@@ -276,7 +276,7 @@ lang: ''
 | 來源     | [pg72.tw](https://pg72.tw/sdlearning-11302/) |
 | 作者     | PGpenguin72 |
 | 簡報軟體  | [Presenterm](https://github.com/mfontanini/presenterm) |
-| 檔案下載  | [MD](http://file.pg72.tw/share/Fe09FcaB) |
+| 檔案下載  | [MD](https://file.pg72.tw/share/Fe09FcaB) |
 
 ## 簡報軟體鏈結：
 ::github{repo="mfontanini/presenterm"}

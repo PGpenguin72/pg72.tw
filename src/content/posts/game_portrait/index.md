@@ -17,7 +17,7 @@ draft: true
 | 製作時間  | 2025/10/26 |
 | 來源     | [pg72.tw](https://pg72.tw/star_of_syue) |
 | 作者     | PGpenguin72 |
-| 檔案下載  | [PNG](http://file.pg72.tw/share/I6gaOqap)、[PDF](http://file.pg72.tw/share/jvfBVFjv) |
+| 檔案下載  | [PNG](https://file.pg72.tw/share/I6gaOqap)、[PDF](https://file.pg72.tw/share/jvfBVFjv) |
 
 ![海報](./poster.png)
 
