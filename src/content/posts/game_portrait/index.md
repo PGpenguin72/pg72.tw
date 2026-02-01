@@ -6,7 +6,7 @@ description: '這是我們學校作業”運動寫真“，我做的主題是音
 image: ''
 tags: ["音遊", "運動寫真", "Chunithm", "作業"]
 category: '報告'
-draft: true 
+draft: false
 ---
 ## 緣起
 中二Chunithm 會成為我做音遊寫真主題的原因是我平時有在練習音遊，然後老師說可以做這種街機當運動寫真的題材，所以我就做了（對，沒有什麼別的理由w
