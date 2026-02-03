@@ -43,7 +43,19 @@ export const navBarConfig: NavBarConfig = {
 	links: [
 		LinkPreset.Home,
 		LinkPreset.Archive,
-		LinkPreset.Links,
+		{
+			name: "鏈結",
+			children: [
+				{
+					name: "我自己",
+					url: "/links/",
+				},
+				{
+					name: "朋友們",
+					url: "/friends/",
+				},
+			],
+		},
 		{
 			name: "關於",
 			children: [

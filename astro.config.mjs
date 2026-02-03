@@ -168,6 +168,19 @@ export default defineConfig({
 		],
 	},
 	vite: {
+		optimizeDeps: {
+			exclude: [
+				"@swup/astro/serialise",
+				"@swup/astro/idle",
+				"@swup/astro/client/Swup",
+				"@swup/astro/client/SwupA11yPlugin",
+				"@swup/astro/client/SwupPreloadPlugin",
+				"@swup/astro/client/SwupScrollPlugin",
+				"@swup/astro/client/SwupHeadPlugin",
+				"@swup/astro/client/SwupScriptsPlugin",
+			],
+			// force: true,
+		},
 		build: {
 			rollupOptions: {
 				onwarn(warning, warn) {

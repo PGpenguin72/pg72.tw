@@ -341,6 +341,14 @@ export const devices: DeviceMap = {
 			description: "只是一個顯示器而已",
 			link: "https://www.lg.com/tw/support/product-support/cs-27MP37VQ-B/",
 		},
+		{
+			name: "HyperX SoloCast - USB Microphone",
+			image:
+				"https://row.hyperx.com/cdn/shop/products/hyperx_solocast_01_main.jpg?v=1662449693&width=1200",
+			specs: "Black",
+			description: "只是一個麥克風",
+			link: "https://row.hyperx.com/zh-hant/products/hyperx-solocast-usb-microphone",
+		},
 	],
 	遊戲設備: [
 		{
