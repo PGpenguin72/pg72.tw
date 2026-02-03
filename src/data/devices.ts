@@ -106,6 +106,14 @@ export const devices: DeviceMap = {
 			description: "一個很厚重的眼鏡",
 			link: "https://support.apple.com/zh-tw/117810",
 		},
+		{
+			name: "Apple Vision Pro 旅行保護盒",
+			image:
+				"https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/MW2F3?wid=1144&hei=1144&fmt=jpeg&qlt=90&.v=MldIUS9pUEs5RzB1dFdIREJ3K0ZTd2tuVHYzMERCZURia3c5SzJFOTlPalVQcXd4RnRLamRET1NGU1ljbTJFOTF3VEFDRnV5WkxnTHVTZGZvYkcvdnc",
+			specs: "沒啥特別的參數哈",
+			description: "一個眼鏡的保護盒",
+			link: "https://www.apple.com/tw/shop/product/mw2f3ta/a/apple-vision-pro-%E6%97%85%E8%A1%8C%E4%BF%9D%E8%AD%B7%E7%9B%92",
+		},
 	],
 	小米: [
 		{
@@ -267,6 +275,14 @@ export const devices: DeviceMap = {
 			specs: "含充電座",
 			description: "這個很酷所以就買了（但已經買不到了喔）",
 			link: "https://www.mi.com/tw/product/xiaomi-magnetic-power-bank-5000/",
+		},
+		{
+			name: "米家電動起子機",
+			image:
+				"https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1581320980.97265101.png",
+			specs: "沒啥個別的參數哈",
+			description: "一個很好用的電動螺絲起子",
+			link: "https://www.mi.com/tw/item/3200200016",
 		},
 	],
 	日常設備: [
