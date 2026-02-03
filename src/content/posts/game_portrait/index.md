@@ -1,7 +1,7 @@
 ---
 title: PG企鵝的音遊大冒險--中二Chunithm
 published: 2025-10-28
-updated: 2025-10-28
+updated: 2025-02-01
 description: '這是我們學校作業”運動寫真“，我做的主題是音遊，我拿100分喔～有興趣可以看看。'
 image: ''
 tags: ["音遊", "運動寫真", "Chunithm", "作業"]

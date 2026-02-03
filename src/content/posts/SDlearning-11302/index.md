@@ -1,7 +1,7 @@
 ---
 title: 高一下自主學習報告
 published: 2025-06-19
-updated: 2025-06-19
+updated: 2026-01-30
 description: '從零開始製作一隻 Discord Bot -- 北極企鵝'
 image: ""
 tags: ["自主學習", "Discord", "Python", "Discord.py", "JSON"]

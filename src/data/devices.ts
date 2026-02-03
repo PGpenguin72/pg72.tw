@@ -466,7 +466,7 @@ export const devices: DeviceMap = {
 		{
 			name: "TP-LINK AC1570 無線雙頻路由器",
 			image:
-				"https://static.tp-link.com/Archer_C7(EU_04_normal_1512031923363z.jpg",
+				"https://static.tp-link.com/Archer_C7(EU_01_normal_1512031573192k.jpg",
 			specs: "WiFi-5 / 450Mbps / 1300Mbps",
 			description: "一個路由器喔",
 			link: "https://www.tp-link.com/tw/home-networking/wifi-router/archer-c7/",

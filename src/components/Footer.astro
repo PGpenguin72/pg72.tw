@@ -9,37 +9,30 @@ const currentYear = new Date().getFullYear();
 <!--<div class="border-t border-[var(&#45;&#45;primary)] mx-16 border-dashed py-8 max-w-[var(&#45;&#45;page-width)] flex flex-col items-center justify-center px-6">-->
 <div class="transition border-t border-black/10 dark:border-white/15 my-10 border-dashed mx-32"></div>
 <!--<div class="transition bg-[oklch(92%_0.01_var(&#45;&#45;hue))] dark:bg-black rounded-2xl py-8 mt-4 mb-8 flex flex-col items-center justify-center px-6">-->
-<div class="transition border-dashed border-[oklch(85%_0.01_var(--hue))] dark:border-white/15 rounded-2xl mb-12 flex flex-col items-center justify-center px-6">
+	<div class="transition border-dashed border-[oklch(85%_0.01_var(--hue))] dark:border-white/15 rounded-2xl mb-12 flex flex-col items-center justify-center px-6">
+		<div class="total-views-wrapper transition text-50 text-xs text-center mt-3 hidden">
+			你是第<span class="total-views-count">-</span> 個瀏覽這個網站的人喔:D
+		</div>
     <div class="transition text-50 text-sm text-center">
+		<br>
         &copy; <span id="copyright-year">{currentYear}</span> {profileConfig.name}. All Rights Reserved. /
         <a class="transition link text-[var(--primary)] font-medium" target="_blank" href={url('rss.xml')}>RSS</a> /
         <a class="transition link text-[var(--primary)] font-medium" target="_blank" href={url('sitemap-index.xml')}>Sitemap</a><br>
         Powered by
-        <a class="transition link text-[var(--primary)] font-medium" target="_blank" href="https://astro.build">Astro</a> &
-        <a class="transition link text-[var(--primary)] font-medium" target="_blank" href="https://github.com/saicaca/fuwari">Fuwari</a>
-    </div>
-    <div id="total-views-wrapper" class="transition text-50 text-xs text-center mt-3 hidden">
-        總瀏覽數：<span id="total-views-count">-</span> 次
+        <a class="transition link text-[var(--primary)] font-medium" target="_blank" href="https://astro.build">Astro</a>,
+        <a class="transition link text-[var(--primary)] font-medium" target="_blank" href="https://github.com/saicaca/fuwari">Fuwari</a>,
+		<a class="transition link text-[var(--primary)] font-medium" target="_blank" href="https://github.com/PGpenguin72/pg72.tw">Github</a> & 
+		<a class="transition link text-[var(--primary)] font-medium" target="_blank" href="https://www.cloudflare.com/">Cloudflare</a>
     </div>
 </div>
 
 <script is:inline>
-	const viewsWrapper = document.getElementById("total-views-wrapper");
-	const viewsCount = document.getElementById("total-views-count");
-
-	function isHomePage() {
-		if (typeof window === "undefined") return false;
-		const path = window.location.pathname || "/";
-		return path === "/" || path === "/index.html";
-	}
+	const viewsWrappers = document.querySelectorAll(".total-views-wrapper");
+	const viewsCounts = document.querySelectorAll(".total-views-count");
 
 	async function updateTotalViews() {
-		if (!viewsWrapper || !viewsCount) return;
-		if (!isHomePage()) {
-			viewsWrapper.classList.add("hidden");
-			return;
-		}
-		viewsWrapper.classList.remove("hidden");
+		if (!viewsWrappers.length || !viewsCounts.length) return;
+		viewsWrappers.forEach((wrapper) => wrapper.classList.remove("hidden"));
 		try {
 			const response = await fetch("https://api.counterapi.dev/v2/pg72tw/total-views/up");
 			const data = await response.json();
@@ -54,7 +47,10 @@ const currentYear = new Date().getFullYear();
 								? data.data
 								: null;
 			if (rawCount !== null) {
-				viewsCount.textContent = new Intl.NumberFormat("en-US").format(rawCount);
+				const formatted = new Intl.NumberFormat("en-US").format(rawCount);
+				viewsCounts.forEach((count) => {
+					count.textContent = formatted;
+				});
 			}
 		} catch (error) {
 			// Keep the placeholder if the request fails.
