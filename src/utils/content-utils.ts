@@ -64,12 +64,13 @@ export async function getTagList(): Promise<Tag[]> {
 		});
 	});
 
-	// sort tags
-	const keys: string[] = Object.keys(countMap).sort((a, b) => {
-		return a.toLowerCase().localeCompare(b.toLowerCase());
+	const entries = Object.entries(countMap).sort((a, b) => {
+		const countDiff = b[1] - a[1];
+		if (countDiff !== 0) return countDiff;
+		return a[0].toLowerCase().localeCompare(b[0].toLowerCase());
 	});
 
-	return keys.map((key) => ({ name: key, count: countMap[key] }));
+	return entries.map(([name, count]) => ({ name, count }));
 }
 
 export type Category = {
@@ -98,16 +99,17 @@ export async function getCategoryList(): Promise<Category[]> {
 		count[categoryName] = count[categoryName] ? count[categoryName] + 1 : 1;
 	});
 
-	const lst = Object.keys(count).sort((a, b) => {
-		return a.toLowerCase().localeCompare(b.toLowerCase());
-	});
-
 	const ret: Category[] = [];
-	for (const c of lst) {
+	const entries = Object.entries(count).sort((a, b) => {
+		const countDiff = b[1] - a[1];
+		if (countDiff !== 0) return countDiff;
+		return a[0].toLowerCase().localeCompare(b[0].toLowerCase());
+	});
+	for (const [name, countValue] of entries) {
 		ret.push({
-			name: c,
-			count: count[c],
-			url: getCategoryUrl(c),
+			name,
+			count: countValue,
+			url: getCategoryUrl(name),
 		});
 	}
 	return ret;

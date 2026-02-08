@@ -4,6 +4,7 @@ import Announcement from "../Announcement.astro";
 import Categories from "./Categories.astro";
 import Profile from "./Profile.astro";
 import Tag from "./Tags.astro";
+import SiteUptime from "./SiteUptime.astro";
 
 interface Props {
 	class?: string;
@@ -20,5 +21,6 @@ const className = Astro.props.class;
         <Announcement class="onload-animation" style="animation-delay: 120ms"></Announcement>
         <Categories class="onload-animation" style="animation-delay: 150ms"></Categories>
         <Tag class="onload-animation" style="animation-delay: 200ms"></Tag>
+        <SiteUptime class="onload-animation" style="animation-delay: 250ms"></SiteUptime>
     </div>
 </div>

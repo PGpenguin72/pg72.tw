@@ -13,18 +13,16 @@ interface Props {
 	style?: string;
 }
 
-const items =
-	Astro.props.items ??
-	[
-        {
-			title: "內容持續更新中",
-			date: "2026-02-01",
-		},
-		{
-			title: "pg72.tw正式開站啦！",
-			date: "2026-01-29",
-		},
-	];
+const items = Astro.props.items ?? [
+	{
+		title: "內容持續更新中",
+		date: "2026-02-08",
+	},
+	{
+		title: "pg72.tw正式開站啦！",
+		date: "2026-01-29",
+	},
+];
 
 const className = Astro.props.class;
 const style = Astro.props.style;
