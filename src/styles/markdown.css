@@ -46,6 +46,11 @@
         line-height: 1;
         padding: 0;
     }
+    .icon-cloud a:hover,
+    .icon-cloud a:active {
+        background: none;
+        border-bottom: none;
+    }
 
     .icon-cloud img {
         display: square;

@@ -1,7 +1,7 @@
 ---
 title: 創建自己的Blog網站筆記
 published: 2026-02-08
-updated: 2026-02-08
+updated: 2026-02-09
 description: '這是我創建自己的Blog紀錄，也拿來當一份小教學，有興趣的都可以來看喔！'
 image: ''
 tags: ["Blog", "Fuwari", "Github", "Cloudfale", "Node.js", "Git"]
@@ -10,8 +10,9 @@ draft: false
 lang: ''
 ---
 
-> [!NOTE]
-> 本筆記初稿由 [Perplexity](https://www.perplexity.ai/) 協助生成架構與提供建議，由 [PGpenguin72](https://pg72.tw) 進行文章撰寫修改內容。
+:::important
+本筆記初稿由 [Perplexity](https://www.perplexity.ai/) 協助生成架構與提供建議，由 [PGpenguin72](https://pg72.tw) 進行文章撰寫修改內容。
+:::
 
 # 目錄
 
@@ -241,7 +242,8 @@ lang: ''
 > 其實只要有 title、published、description 和 draft，就已經可以正常發文了，其他欄位可以之後再慢慢補。
 
 Frontmatter 下面就可以照平常的 Markdown 寫內容，標題、粗體、清單、程式碼區塊都沒問題。 
-* 如果不知道 Markdown 要怎麼寫的，可以參考我網站的另外一篇文章（文章鏈結：`還沒用好喔:D`） 
+* 如果不知道 Markdown 要怎麼寫的，可以參考我網站的另外一篇文章）
+::link{url="https://pg72.tw/posts/markdown-note/" text="Markdown筆記"}
 
 寫好之後回到瀏覽器，你應該可以在首頁 / 文章列表看到你自己的第一篇文。
 

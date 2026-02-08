@@ -8,9 +8,9 @@ tags: ["APCS", "Python"]
 category: '筆記'
 draft: false 
 ---
-> [!NOTE]
-> 本講義初稿由 [Perplexity](https://www.perplexity.ai/) 協助生成，由 [PGpenguin72](https://pg72.tw) 進行校稿、補充與修改。
-
+:::important
+本筆記初稿由 [Perplexity](https://www.perplexity.ai/) 協助生成架構與提供建議，由 [PGpenguin72](https://pg72.tw) 進行文章撰寫修改內容。
+:::
 
 # 目錄
 

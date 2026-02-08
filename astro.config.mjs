@@ -18,6 +18,7 @@ import remarkSectionize from "remark-sectionize";
 import { expressiveCodeConfig } from "./src/config.ts";
 import { pluginCustomCopyButton } from "./src/plugins/expressive-code/custom-copy-button.js";
 import { pluginLanguageBadge } from "./src/plugins/expressive-code/language-badge.ts";
+import { rehypeFootnoteLabel } from "./src/plugins/rehype-footnote-label.ts";
 import { AdmonitionComponent } from "./src/plugins/rehype-component-admonition.mjs";
 import { GithubCardComponent } from "./src/plugins/rehype-component-github-card.mjs";
 import { LinkCardComponent } from "./src/plugins/rehype-component-link-card.mjs";
@@ -128,6 +129,7 @@ export default defineConfig({
 		rehypePlugins: [
 			rehypeKatex,
 			rehypeSlug,
+			rehypeFootnoteLabel,
 			[
 				rehypeComponents,
 				{
