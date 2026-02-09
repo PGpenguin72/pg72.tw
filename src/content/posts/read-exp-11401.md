@@ -5,7 +5,7 @@ updated: 2026-02-09
 description: ''
 image: ''
 ogImage: 'https://pg72.tw/og/read-exp-11401.png'
-tags: ["閱讀心得", "蛤蟆先生去看心理師", "漫畫"]
+tags: ["閱讀心得", "蛤蟆先生去看心理師", "小說"]
 category: '作業'
 draft: false 
 lang: ''

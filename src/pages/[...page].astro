@@ -15,16 +15,15 @@ export const getStaticPaths = (async ({ paginate }) => {
 const { page } = Astro.props;
 
 const len = page.data.length;
-const isFirstPage = page.currentPage === 1;
-const homeTitle = "PGpenguin72 / pg72.tw";
+const homeTitle = "PGpenguin72的網站 / pg72.tw";
 const homeDescription = "是我的小網站喔！";
 const homeOgImage = "https://pg72.tw/og/home.png";
 ---
 
 <MainGridLayout
-	title={isFirstPage ? homeTitle : undefined}
-	description={isFirstPage ? homeDescription : undefined}
-	ogImage={isFirstPage ? homeOgImage : undefined}
+	title={homeTitle}
+	description={homeDescription}
+	ogImage={homeOgImage}
 >
     <PostPage page={page}></PostPage>
     <Pagination class="mx-auto onload-animation" page={page} style={`animation-delay: calc(var(--content-delay) + ${(len)*50}ms)`}></Pagination>

@@ -53,6 +53,9 @@ lang: jp      # 僅當文章語言與 `config.ts` 中的網站語言不同時需
 | `pnpm new-post <filename>`        | 建立新文章                             |
 | `pnpm astro ...`                  | 執行 `astro add`、`astro check` 等指令 |
 | `pnpm astro --help`               | 顯示 Astro CLI 說明                   |
+| `pnpm og:all`                     | 創建所有網頁的OG圖示                   |
+| `pnpm og:all <post-path-or-slug>` | 創建指定網頁的OG圖示                   |
+| `pnpm og:page -- --slug <page name> --title " " --description ""` | 創建特殊指定網頁的OG圖示|
 
 ## 📝 建立文章
 
