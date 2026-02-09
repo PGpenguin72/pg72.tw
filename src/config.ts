@@ -1,11 +1,9 @@
 import type {
 	ExpressiveCodeConfig,
-	LicenseConfig,
 	NavBarConfig,
 	ProfileConfig,
 	SiteConfig,
 } from "./types/config";
-import { LinkPreset } from "./types/config";
 
 export const siteConfig: SiteConfig = {
 	title: "PGpenguin72",
@@ -25,10 +23,6 @@ export const siteConfig: SiteConfig = {
 			url: "https://pg72.tw/posts/star_of_syue/", // （可選）指向原作品或藝術家頁面的 URL 連結
 		},
 	},
-	toc: {
-		enable: true, // 在文章右側顯示目錄
-		depth: 2, // 目錄中顯示的最大標題深度，從 1 到 3
-	},
 	favicon: [
 		// 將此陣列留空以使用默認 favicon
 		{
@@ -40,41 +34,7 @@ export const siteConfig: SiteConfig = {
 };
 
 export const navBarConfig: NavBarConfig = {
-	links: [
-		LinkPreset.Home,
-		LinkPreset.Archive,
-		{
-			name: "鏈結",
-			children: [
-				{
-					name: "我自己",
-					url: "/links/",
-				},
-				{
-					name: "朋友們",
-					url: "/friends/",
-				},
-			],
-		},
-		{
-			name: "關於",
-			children: [
-				{
-					name: "關於我",
-					url: "/about/",
-				},
-				{
-					name: "裝置",
-					url: "/device/",
-				},
-			],
-		},
-		{
-			name: "GitHub",
-			url: "https://github.com/PGpenguin72/pg72.tw", // 內部連結不應包含基礎路徑，因為它會自動添加
-			external: true, // 顯示外部連結圖標，並在新標籤頁中開啟
-		},
-	],
+	links: [],
 };
 
 export const profileConfig: ProfileConfig = {
@@ -103,12 +63,6 @@ export const profileConfig: ProfileConfig = {
 			url: "https://www.instagram.com/pg_penguin_72/",
 		},
 	],
-};
-
-export const licenseConfig: LicenseConfig = {
-	enable: true,
-	name: "CC BY-NC-SA 4.0",
-	url: "https://creativecommons.org/licenses/by-nc-sa/4.0/",
 };
 
 export const expressiveCodeConfig: ExpressiveCodeConfig = {
