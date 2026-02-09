@@ -4,6 +4,7 @@ published: 2026-02-09
 updated: 2026-02-09
 description: '如果你想學習如何使用markdown，這份筆記可能可以幫助到你！'
 image: ''
+ogImage: 'https://pg72.tw/og/markdown-note.png'
 tags: ["Markdown","Blog"]
 category: '筆記'
 draft: false 

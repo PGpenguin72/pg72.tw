@@ -4,6 +4,7 @@ published: 2025-12-05
 updated: 2026-01-29
 description: 每天一題 ZeroJudge，結合 GitHub 開源實作，讓你的程式能力光速成長。
 image: "./cover.png"
+ogImage: 'https://pg72.tw/og/zerojudge-practice.png'
 tags: [ZeroJudge, Coding, APCS, GitHub]
 category: 程式
 draft: false

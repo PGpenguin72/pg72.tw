@@ -4,6 +4,7 @@ published: 2026-02-08
 updated: 2026-02-09
 description: '這是我創建自己的Blog紀錄，也拿來當一份小教學，有興趣的都可以來看喔！'
 image: ''
+ogImage: 'https://pg72.tw/og/create-a-blog.png'
 tags: ["Blog", "Fuwari", "Github", "Cloudfale", "Node.js", "Git"]
 category: '筆記'
 draft: false 
@@ -287,6 +288,8 @@ git push
 4. 輸入專案名稱後，將`Framework`改成`Astro`，並設定 Build Command 為 `npm run build`。  
 6. Output Directory 就維持原本的：`dist`，其他的都不需要更改操作。 
 7. 等它建置完，就會拿到一個 `*.pages.dev` 網址。（如果你有自己的域名的話可以把域名綁定到你這個專案上）
+> [!note]
+> 如果你是使用我做的simple版本，請記得把branch改成simple，這樣才會自動上傳正確分支喔！
 
 之後只要你 push 新的 commit，Cloudflare Pages 就會自動幫你重新部署。
 

@@ -4,6 +4,7 @@ published: 2026-01-01
 updated: 2026-01-31
 description: '來看看我的2025年度回顧吧!'
 image: './cover.png'
+ogImage: 'https://pg72.tw/og/2025-recap.png'
 tags: ["2025recap"]
 category: 'Recap'
 draft: false 

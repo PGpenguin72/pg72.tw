@@ -3,6 +3,7 @@ title: Hello world
 published: 2026-01-29
 updated: 2026-01-29
 description: 向世界說你好:D
+ogImage: 'https://pg72.tw/og/hello-world.png'
 tags: [Hello, Python, C++]
 category: 日常
 draft: false

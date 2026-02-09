@@ -2,6 +2,7 @@
 
 import fs from "node:fs";
 import path from "node:path";
+import { generateOgForFile } from "./generate-og.js";
 
 function getDate() {
 	const today = new Date();
@@ -48,6 +49,7 @@ published: ${getDate()}
 updated: ${getDate()}
 description: ''
 image: ''
+ogImage: ''
 tags: []
 category: ''
 draft: false 
@@ -58,3 +60,11 @@ lang: ''
 fs.writeFileSync(path.join(targetDir, fileName), content);
 
 console.log(`Post ${fullPath} created`);
+
+try {
+	await generateOgForFile(fullPath);
+} catch (error) {
+	console.warn(
+		`OG image generation skipped: ${error instanceof Error ? error.message : String(error)}`,
+	);
+}

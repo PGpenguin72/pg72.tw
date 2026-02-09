@@ -4,7 +4,6 @@ import GiscusComments from "@components/GiscusComments.astro";
 import Markdown from "@components/misc/Markdown.astro";
 import MainGridLayout from "@layouts/MainGridLayout.astro";
 import { Icon } from "astro-icon/components";
-import { siteConfig } from "../config";
 import { friends } from "../friends_data";
 
 const friendsIntroPost = await getEntry("spec", "friends-intro");
@@ -18,7 +17,11 @@ const { Content: IntroContent } = await render(friendsIntroPost);
 const { Content: JoinContent } = await render(friendsJoinPost);
 ---
 
-<MainGridLayout title="我的朋友們" description={siteConfig.description}>
+<MainGridLayout
+	title="朋友們"
+	description="連結與介紹"
+	ogImage="https://pg72.tw/og/friends.png"
+>
     <div class="card-base p-6 md:p-8">
         <div class="sponsors-section mb-8">
             <Markdown class="mt-2 markdown-content">

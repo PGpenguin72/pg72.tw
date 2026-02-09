@@ -4,6 +4,7 @@ published: 2025-06-19
 updated: 2026-01-30
 description: '從零開始製作一隻 Discord Bot -- 北極企鵝'
 image: ""
+ogImage: 'https://pg72.tw/og/sdlearning-11302.png'
 tags: ["自主學習", "Discord", "Python", "Discord.py", "JSON"]
 category: '報告'
 draft: false 
@@ -274,7 +275,7 @@ lang: ''
 | 標題     | Discord Bot—一隻北極企鵝 |
 | 內容     | 功能示意、程式畫面、錯誤紀錄等等|
 | 簡報頁數  | 共 31 頁 |
-| 來源     | [pg72.tw](https://pg72.tw/sdlearning-11302/) |
+| 來源     | [pg72.tw](https://pg72.tw/posts/sdlearning-11302/) |
 | 作者     | PGpenguin72 |
 | 簡報軟體  | [Presenterm](https://github.com/mfontanini/presenterm) |
 | 檔案下載  | [MD](https://file.pg72.tw/share/Fe09FcaB) |

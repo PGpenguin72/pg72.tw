@@ -4,6 +4,7 @@ published: 2025-12-21
 updated: 2026-01-29
 description: '一個很好看的星空，反正就點進來看看吧:D'
 image: './cover.png'
+ogImage: 'https://pg72.tw/og/star-of-syue.png'
 tags: ["星空", "iPhone"]
 category: '天文攝影'
 draft: false 
@@ -22,7 +23,7 @@ lang: ''
 | 標題     | 雪山之星 |
 | 說明     | 使用iPhone 15 Pro 進行10秒爆光所拍攝出的雪山星空。|
 | 拍攝時間  | 2025/12/21 凌晨00:52:19 |
-| 來源     | [pg72.tw](https://pg72.tw/star_of_syue) |
+| 來源     | [pg72.tw](https://pg72.tw/posts/star_of_syue/) |
 | 作者     | PGpenguin72 |
 | 檔案下載  | [PNG](https://file.pg72.tw/share/qlqvRJdm)、[DNG(Raw)](http://file.pg72.tw/share/Ul8hAZaM) |
 | 解析度    | 4032 × 3024 像素。|

@@ -2,8 +2,6 @@
 import { getEntry, render } from "astro:content";
 import Markdown from "@components/misc/Markdown.astro";
 import { Icon } from "astro-icon/components";
-import I18nKey from "../i18n/i18nKey";
-import { i18n } from "../i18n/translation";
 import MainGridLayout from "../layouts/MainGridLayout.astro";
 
 const linksPost = await getEntry("spec", "links");
@@ -187,7 +185,11 @@ const links = [
 	
 ];
 ---
-<MainGridLayout title={i18n(I18nKey.links)} description={i18n(I18nKey.links)}>
+<MainGridLayout
+	title="鏈結"
+	description="我與朋友的連結"
+	ogImage="https://pg72.tw/og/links.png"
+>
 	<div class="flex w-full rounded-[var(--radius-large)] overflow-hidden relative min-h-32">
 		<div class="card-base z-10 px-9 py-6 relative w-full ">
 			<Markdown class="mt-2">

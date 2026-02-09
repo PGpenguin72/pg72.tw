@@ -13,6 +13,9 @@
     "new-post": "node scripts/new-post.js",
     "format": "biome format --write ./src",
     "lint": "biome check --write ./src",
+    "og": "node scripts/generate-og.js",
+    "og:all": "node scripts/generate-og.js --all",
+    "og:page": "node scripts/generate-og.js --page",
     "preinstall": "npx only-allow pnpm"
   },
   "dependencies": {

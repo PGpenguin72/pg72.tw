@@ -4,6 +4,7 @@ published: 2026-01-03
 updated: 2026-02-08
 description: '反正這裡會幫忙複習APCS觀念會用到的Python東西，還有一些題目可以練習。'
 image: ''
+ogImage: 'https://pg72.tw/og/2026-01-03-apcs-cram-notes.png'
 tags: ["APCS", "Python"]
 category: '筆記'
 draft: false 
