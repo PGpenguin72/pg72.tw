@@ -111,6 +111,18 @@ export const friends: Friend[] = [
 		description: "在冷圈被凍死的犟種",
 	},
 	{
+		name: "蛙",
+		url: "https://www.instagram.com/seanfrog2009/",
+		avatar: "/friends/蛙.jpg",
+		description: "青蛙找青蛙",
+	},
+	{
+		name: "傅傅得正",
+		url: "https://www.instagram.com/cn_171_11_85317/",
+		avatar: "/friends/傅傅得正.jpg",
+		description: "選對的人，做對的事",
+	},
+	{
 		name: "塵封的幻影",
 		url: "https://www.instagram.com/cat97922",
 		avatar: "/friends/塵封的幻影.jpeg",

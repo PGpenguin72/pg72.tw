@@ -349,6 +349,14 @@ export const devices: DeviceMap = {
 			description: "只是一個麥克風",
 			link: "https://row.hyperx.com/zh-hant/products/hyperx-solocast-usb-microphone",
 		},
+		{
+			name: "GoPro HERO 11",
+			image:
+				"https://static.gopro.com/assets/blta2b8522e5372af40/bltc41cab6366d0ac66/645147b3d57e320df0d82a9f/pdp-h11b-SA-image03-1920-2x.png?width=3840&quality=80&auto=webp&disable=upscale",
+			specs: "Black",
+			description: "只是一台運動相機哈",
+			link: "https://gopro.com/en/us/shop/cameras/hero11-black/CHDHX-111-master.html",
+		},
 	],
 	遊戲設備: [
 		{
@@ -493,7 +501,7 @@ export const devices: DeviceMap = {
 				"https://static.tp-link.com/Archer_C7(EU_01_normal_1512031573192k.jpg",
 			specs: "WiFi-5 / 450Mbps / 1300Mbps",
 			description: "一個路由器喔",
-			link: "https://www.tp-link.com/tw/home-networking/wifi-router/archer-c7/",
+			link: "https://shop.hunder.com.hk/wp-content/webpc-passthru.php?src=https://shop.hunder.com.hk/wp-content/uploads/2020/10/tplink_AC1750-p4.jpg",
 		},
 	],
 	台中伺服器: [

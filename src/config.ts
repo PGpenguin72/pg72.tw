@@ -17,8 +17,8 @@ export const siteConfig: SiteConfig = {
 	},
 	banner: {
 		enable: true,
-		src: "assets/images/star1.png", // 相對於 /src 目錄。如果以 '/' 開頭，則相對於 /public 目錄
-		position: "center", // 等同於 object-position，只支援 'top', 'center', 'bottom'。默認為 'center'
+		src: "assets/images/star.png", // 相對於 /src 目錄。如果以 '/' 開頭，則相對於 /public 目錄
+		position: "bottom", // 等同於 object-position，只支援 'top', 'center', 'bottom'。默認為 'center'
 		credit: {
 			enable: true, // 顯示橫幅圖片的版權文字
 			text: "iPhone 15 Pro · PGpenguin72", // 要顯示的版權文字
