@@ -307,6 +307,13 @@ $$
 
 # Fuwari 特色
 
+## 暴雷內容
+
+:spoiler[如果你想像這樣把你的文字藏起來，要使用者點選後才會出現文字]，你可以這樣寫：
+```markdown
+:spoiler[你想要藏起來的字]
+```
+
 ## GitHub Repository Cards（GitHub 倉庫卡片）
 
 Fuwari 支援直接在文章裡插入「會自動抓 GitHub 資訊的卡片」，包含專案名稱、描述、star 數、license 等。 

@@ -27,7 +27,7 @@ export const siteConfig: SiteConfig = {
 	},
 	toc: {
 		enable: true, // 在文章右側顯示目錄
-		depth: 2, // 目錄中顯示的最大標題深度，從 1 到 3
+		depth: 3, // 目錄中顯示的最大標題深度，從 1 到 3
 	},
 	favicon: [
 		// 將此陣列留空以使用默認 favicon

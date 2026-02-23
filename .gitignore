@@ -31,3 +31,7 @@ yarn.lock
 *.iml
 src/pages/404.astro
 src/content/SDlearning-11401
+src/content/posts/read-exp-114020.md
+src/content/posts/THJCC-2026-writeup/asset/test.bash
+src/content/posts/THJCC-2026-writeup/asset/test.py
+src/content/posts/read-exp-11402.md
