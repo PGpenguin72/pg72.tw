@@ -2973,8 +2973,145 @@ THJCC{c0lorfU1_col0rfu!_c0
 #### Flag:
 ```THJCC{c0lorfU1_col0rfu!_c0!0rful_img_m4d3_by_p1e7:>}```
 
+## Web
+
+### [Las Vegas](https://ctf2026.thjcc.org/challenges#Las%20Vegas-17) (100)
+![題目圖片](./asset/Las%20Vegas.png)
+#### 題目：
+Lucky 7 7 7
+http://chal.thjcc.org:14514
+> Ahthor: Frank
+
+#### 解題心得：
+這題其實很簡單，點進網站後顯示了一個拉霸機，然後我們嘗試玩玩看：
+![slot](./asset/slot.png)
+恩，看起來他一定要我們投擲到777才會有Flag，但我們沒有這麼多的時間慢慢賭機率，所以我們打開F12(開發者工具)來看看，然後點進Network發現每次拉霸都會請求一個`?n=XXX`這種東西，而那個數字是拉霸機的數字，那我們就可以合理推斷，他應該是透過這樣來取得狀態的。  
+於是我們直接向後端發送777的請求：
+```bash
+pg72@PGpenguin72:~/Downloads$ curl -X POST http://chal.thjcc.org:14514/\?n\=777
+What a Lucky man! THJCC{LUcKy_sEVen_ee9cfe0c7fca2c2d}
+```
+然後我們就得到了Flag！
+#### Flag:
+```THJCC{LUcKy_sEVen_ee9cfe0c7fca2c2d}```
+
+### [Ear👂](https://ctf2026.thjcc.org/challenges#Ear%F0%9F%91%82-18) (100)
+![題目圖片](./asset/Ear👂.png)
+#### 題目：
+[CWE-698](https://cwe.mitre.org/data/definitions/698.html)
+
+http://chal.thjcc.org:1234
+> Author: Frank
+
+#### 解題心得：
+這題是考你是否知道`CWE-698-EAR`漏洞是什麼，簡單來說就是沒有停止符導致後續代碼的洩漏（應該是可以這樣解釋吧...?），這在Web中會導致嚴重的資安漏洞，那我們就來運用看看吧！  
+首先查看一下網頁內容：
+![website](./asset/ear%20web.png)
+直接猜猜看`admin.php`有沒有東西吧，直接使用curl發送請求（Author 是這麼寫的，就是單純猜會有一個管理頁面這樣）：
+```bash
+pg72@PGpenguin72:~/Downloads$ curl http://chal.thjcc.org:1234/admin.php
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>Admin Panel</title></head>
+<body>
+<p>Admin Panel</p>
+<p><a href="status.php">Status page</a></p>
+<p><a href="image.php">Image</a></p>
+<p><a href="system.php">Setting</a></p>
+</body>
+```
+這裡面還有其他的檔案欸，那我們一個一個查閱後會發現只有`system.php`裡有我們要的Flag：
+```bash
+pgpenguin72@PGpenguin72:~/Downloads$ curl http://chal.thjcc.org:1234/system.php
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>Admin Panel</title></head>
+<body>
+<p>System settings</p>
+<p>THJCC{2cd89747634417ba_U_kNoW-HOw-t0_uSe-EaR}</p>
+</body>
+</html>
+```
+#### Flag:
+```THJCC{2cd89747634417ba_U_kNoW-HOw-t0_uSe-EaR}```
+
+### [My First React](https://ctf2026.thjcc.org/challenges#My%20First%20React-34) (100)
+![題目圖片](./asset/My%20First%20React.png)
+#### 題目：
+https://chal.thjcc.org:25600/
+> Author: xiulan
+
+#### 解題心得：
+這題很麻煩喔，我們就直接點入網頁：
+![website login](./asset/MFR%20login.png)
+這個網頁要我們登入，而且還很好心的幫我們填上了`guest`了，然後我們點Login看看：
+![logged in](./asset/MFR_logged_in.png)
+恩... 沒啥東西，那我們直接丟 [Burp Suite](https://portswigger.net/burp) 來分析一下網頁：
+> [!NOTE]
+> 這是一個可以攔截代理服務器的一個工具，還有修改檢查HTTP/HTTPS流量等功能，廣泛用於掃描漏洞和測試滲透。
+
+![Burp](./asset/MFR%20burp_1.png)
+我發現點擊登入的時候會有一個請求`/api/login`的部分，然後他回傳的東西很有意思：
+```json
+{"result":{"role":"guest","username":"guest"},"success":true}
+```
+這個role看起來很SUS，於是我使用Proxy頁面的`Intercept`來攔截Response並修改成"admin"：
+![Burp](./asset/MFR%20burp_2.png)
+修改後把所有請求回應Forward出去，Flag就跑出來了：
+![MFR Flag](./asset/MFR%20flag.png)
+
+#### Flag:
+```THJCC{CSR_c4n_b3_d4ng3rrr0us!}```
+
+### [A long time ago...](https://ctf2026.thjcc.org/challenges#A%20long%20time%20ago...-36) (100)
+![題目圖片](./asset/A%20long%20time%20ago....png)
+#### 題目：
+http://chal.thjcc.org:25601/
+> Author: xiulan
+
+:::Tip[Download Flie]
+[THJCC_long_time_ago.zip](https://file.pg72.tw/share/ffwdPLZC)
+:::
+
+#### 解題心得：
+這題我們先點進去看一下網頁：
+![ALTA login](./asset/ALTA%20login.png)
+好的，一開始就告訴我們admin登入已經被取消了，那我們還是一樣試試看：
+![Admin login is permanently disabled.](./asset/Admin%20login%20is%20permanently%20disabled..png)
+好看起來是沒辦法的，那接下來去登入為其他user試試看：
+![Logged in as pg72](./asset/ALTA_PG72.png)
+恩？我的Flag被管理員的貓吃了？？？那就按照國際慣例檢查一次cookies和請求，雖然cookie中有個感覺可以做手腳的`PHPSESSID`，不過在不熟的情況下決定去看看題目附錄檔案好了，於是我下載後就解壓縮看看，裡面果然是網頁原始碼。那就先看看`loginController.php`吧：
+```php collapse={1-6, 10-17}
+<?php
+session_start();
+
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $_SESSION['perms'] = [];
+
+    if ($_POST['username'] === 'admin') {
+        die("Admin login is permanently disabled.");
+    }
+
+    $perm_key = $_POST['username'];
+    $_SESSION['perms'][$perm_key] = 'guest_access';
+
+    $_SESSION['username'] = $_POST['username'];
+    header('location: /index.php');
+    die();
+}
+```
+這裡發現網站在比對是否為管理員時只有比對是否為`admin`，然後我們可以發現一件事情，這個比對的等號是三個，也就是嚴格比較，這個東西有個規則是當陣列的 Key 是一個合法的十進位數字字串（舉例為`0`），PHP 會自動把它強制轉型成 int。
+
+所以系統在執行`if ($_POST['username'] === 'admin)'`，會變成是 `if (0 == 'admin')`，而php嘗試比較時會把'admin'字串轉型成int，不過由於字串並沒有任何數字，於是判斷式就會變成`if (0 == 0)`，而執行管理員代碼。
+
+那接下來我就不多說了，直接輸入一個數字0來看看，點擊登入：
+![logged in as admin](./asset/ALTA%20admin.png)
+#### Flag:
+```THJCC{Meow_M3ow_Me0w}```
+
 ---
 
 # 目前暫時更新到這裡，還會繼續更新，整理更多THJCC 2026CTF的題目！
 - 2025/02/23："Welcome/Welcome to THJCC CTF" to "Misc/Lock?"
-- 2025/02/24："Forensics/Ransomware to "Forensics/CoLoR iS cOdE"
+- 2025/02/24："Forensics/Ransomware" to "Forensics/CoLoR iS cOdE"
+- 2025/02/25："Web/Las Vegas" to "A long time ago..."
