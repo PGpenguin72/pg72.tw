@@ -3691,7 +3691,7 @@ http://chal.thjcc.org:10200/
 #### Flag:
 ```THJCC{}```
 
-## PWN
+## Pwn
 ### [-ASCII Driver](100) (100)
 ![題目圖片](./asset/ASCII%20Driver.png)
 #### 題目：
@@ -4038,7 +4038,7 @@ THJCC{U-Kn0W_h0W-t0(Pr0mp7-1nJ3ct10n}
 #### Flag:
 ```THJCC{U-Kn0W_h0W-t0(Pr0mp7-1nJ3ct10n}```
 
-### [Steal My model](https://ctf2026.thjcc.org/challenges#Steal%20My%20model%20-50) (385)
+### [-Steal My model](https://ctf2026.thjcc.org/challenges#Steal%20My%20model%20-50) (385)
 ![題目圖片](./asset/Steal%20My%20model.png)
 #### 題目：
 You only get black-box label queries with limited budget. Recover the hidden classifier parameters and submit them to get the flag
