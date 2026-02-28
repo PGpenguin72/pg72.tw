@@ -4180,6 +4180,92 @@ b>0
 #### Flag:
 ```THJCC{676767676767676767676767_i_dont_like_those_brainnot_memes_XD}```
 
+### [-Butterfly](https://ctf2026.thjcc.org/challenges?#Butterfly-29) (182)
+![題目圖片](./asset/Butterfly.png)
+#### 題目：
+They say a butterfly's wings can cause a tornado halfway around the world. This cipher embraces that chaos. Can you find the key that unlocks the secret?
+> Author: MaZon
+
+:::Tip[Download Flie]
+[encrypt.py](https://file.pg72.tw/share/-UQZs8SW)、[flag.txt.enc](https://file.pg72.tw/share/fs5SqYS7)
+:::
+
+#### 解題心得：
+好吧這題其實沒有解出來，還在學習中，等學好了再放上來！
+
+#### Flag:
+```THJCC{}```
+
+### [Proof 100](https://ctf2026.thjcc.org/challenges?#Proof%20100-51) (254)
+![題目圖片]()
+#### 題目：
+Proof me you love me 100 times ... WITH YOUR SIGNATURE!!!  
+哼
+> Author: whale120
+
+:::Tip[Download Flie]
+[dist_1.zip](https://file.pg72.tw/share/MLpp7N3T)
+:::
+
+:::Tip[Connection]
+nc chal.thjcc.org 48763
+:::
+
+#### 解題心得：
+這題就直接下載解壓縮後來看代碼吧，一樣先開`chal.py`：
+```py
+from flags import flag
+from Crypto.Util.number import *
+from hashlib import md5
+import os
+
+p, q = getPrime(64), getPrime(64)
+e = 0x10001
+N = p * q
+d = pow(e, -1, (p-1)*(q-1))
+
+seed = os.urandom(16)
+
+def sign(msg):
+    global d, N
+    m = bytes_to_long(md5(msg).digest())
+    return pow(m, d, N)
+
+used_keys = []
+print(f"SEED: {seed.hex()}")
+print(f"{e=}")
+
+for i in range(100):
+    print("My turn owo")
+    cur_key = bytes.fromhex(input("key:"))
+    print(sign(cur_key+seed))
+    used_keys.append(cur_key)
+    print("Your turn ^w^")
+    cur_key = bytes.fromhex(input("key:"))
+    if cur_key in used_keys:
+        print("Can u be more creative LOL")
+        exit()
+    
+    proof = int(input("proof:"))
+    if proof != sign(cur_key+seed):
+        print("Sorry u didn't proof anything ...")
+        exit()
+    used_keys.append(cur_key)
+    print("PASS!")
+
+phi = int(input("phi?"))
+
+if phi != (p-1)*(q-1):
+    print("FAILED at LAST haha")
+    exit()
+
+print("Well done", flag)
+```
+這題這樣看，代碼就是實作RSA簽章。RSA簡單來說就是拿公鑰去計算...(尚未寫完，敬請期待（？)
+
+#### Flag:
+```THJCC{}```
+
 ---
 
 # 目前暫時更新到這裡，還會繼續更新，整理更多THJCC 2026CTF的題目！
