@@ -76,7 +76,6 @@ THJCC CTF 不僅是競爭舞台，更是學習與交流的平台。
 
 期待明年的`THJCC CTF 2027`，在這期間我會努力進步的！
 
-
 # 更新歷史：
 ## 題目：
 - 2025/02/23："Welcome/Welcome to THJCC CTF" to "Misc/Lock?"
