@@ -1,0 +1,59 @@
+---
+title: THJCC 2026 CTF Writeup 1 - Welcome
+published: 2026-02-23
+updated: 2026-03-01
+description: 這篇是Welcome分類，應該是最簡單的題目！
+image: "./asset/cover.png"
+ogImage: 'https://pg72.tw/og/thjcc-2026-writeup.png'
+tags: [THJCC, CTF, 資安]
+category: 程式
+draft: false
+---
+
+welcome題沒啥好介紹的，就是welcome啊！
+> WP完成度： (2/2)
+
+# Welcome分類：
+## [Welcome to THJCC CTF](https://ctf2026.thjcc.org/challenges#Welcome%20to%20THJCC%20CTF-3) (10)
+![題目圖片](./asset/Welcome%20to%20THJCC%20CTF.png)
+### 題目：
+In this CTF, unless otherwise specified, the flag format is THJCC{.*}
+> Author: Frank
+
+Hint: 
+:spoiler[Just F12 and Search]
+
+### 解題心得：
+這題其實都是老朋友了，這題的那個圖片會瘋狂跳動，根本沒辦法看清，所以如果想要看清楚的話，你只要使用開發者模式(F12)，然後找到網頁對應元素就可以成功找到文本內容了！
+```html
+<span class="chaos-text" data-text="THJCC{We1c0m3-tO-tHjcC-c7F_2O26}">
+    ::before
+    THJCC{We1c0m3-tO-tHjcC-c7F_2O26}
+    ::after
+</span>
+```
+
+#### Flag:
+```THJCC{We1c0m3-tO-tHjcC-c7F_2O26}```
+
+## [Feedback Form !](https://ctf2026.thjcc.org/challenges#Feedback%20Form%20!-44) (10)
+![題目圖片](./asset/Feedback%20Form%20!.png)
+#### 題目：
+https://forms.gle/QaVkpitdq9LgTSUk7
+
+### 解題心得：
+這題就是很簡單的填寫表單，啊我那個時候沒有搶到第一QwQ，反正就填表單就可以拿到Flag了！
+![填寫表單後會拿到flag](./asset/Feedback%20Form%20!_submit%20the%20form.png)
+
+### Flag:
+```THJCC{Thanks_\O/_L0vU}```
+
+# 跳轉：
+1.    [THJCC 2026 CTF Writeup 0](http://pg72.tw/posts/thjcc-2026-writeup-0/)
+2.    [THJCC 2026 CTF Writeup 2 - Reverse](http://pg72.tw/posts/thjcc-2026-writeup-2/)
+3.    [THJCC 2026 CTF Writeup 3 - Misc](http://pg72.tw/posts/thjcc-2026-writeup-3/)
+4.    [THJCC 2026 CTF Writeup 4 - Forensics](http://pg72.tw/posts/thjcc-2026-writeup-4/)
+5.    [THJCC 2026 CTF Writeup 5 - Web](http://pg72.tw/posts/thjcc-2026-writeup-5/)
+6.    [THJCC 2026 CTF Writeup 6 - Pwn](http://pg72.tw/posts/thjcc-2026-writeup-6/)
+7.    [THJCC 2026 CTF Writeup 7 - AI](http://pg72.tw/posts/thjcc-2026-writeup-7/)
+8.    [THJCC 2026 CTF Writeup 8 - Crypto](http://pg72.tw/posts/thjcc-2026-writeup-8/)

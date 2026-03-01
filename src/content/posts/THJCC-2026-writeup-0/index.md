@@ -1,0 +1,88 @@
+---
+title: THJCC 2026 CTF Writeup
+published: 2026-02-23
+updated: 2026-03-01
+description: 這是我這次做這個THJCC CTF的筆記喔！
+image: "./asset/cover.png"
+ogImage: 'https://pg72.tw/og/thjcc-2026-writeup.png'
+tags: [THJCC, CTF, 資安]
+category: 程式
+draft: false
+---
+
+# 前言
+## CTF簡介
+簡單來說，CTF是一種尋寶活動，出題者會把旗子(Flag)藏在容易受攻擊的程序和網站中。參賽者須要想辦法透過各種方式找到旗子就贏了！
+ 
+:::Note
+Flag 旗子：通常會是 ```PGCTF{Y0u_F0und_7h15_Fl@5}``` 這種格式的文字，也有可能會拆開來藏在任何地方或用各種加密的方式藏起來。
+:::
+
+## CTF會接觸到哪些東西呢？
+其實很多，各種你想得到的都有可能，如果你對資訊（特別是資訊安全）有興趣的話，一定要挑戰看看CTF，這會讓你很快的增加你的資訊知識！
+
+## 要怎麼練習CTF呢？
+CTF 練習的管道我自己是用 picoCTF 來練習啦，就是多做題目，查查資料這樣。
+
+還有CTF真的很吃你的見識淺薄，所以CTF不外乎就是練習，要不就是去接觸更廣的知識。
+
+::link{url="https://picoctf.org/" text="picoCTF官方網站"}
+
+
+## THJCC 是什麼？
+THJCC CTF 是一場**專為臺灣高中生舉辦的線上資安競賽**，由 SCINT 北臺灣學生資訊社群、全國志同道合的學生共同主辦，並獲得多個資安組織與單位支持。比賽採 **Jeopardy 題型**，題目涵蓋 Web、Reverse、Crypto、Pwn 與 Misc，兼顧入門學習與進階挑戰。賽事宗旨在於**推廣資訊安全教育，培養高中生對資安技術的興趣與實作能力**。在比賽時更有可能獲得**獎金**、**獎狀**等獎勵，讓選手在競賽過程中增加應對未來比賽的信心。
+
+THJCC CTF 不僅是競爭舞台，更是學習與交流的平台。
+
+> [!NOTE] 
+> 以上介紹文字來自於 [THJCC 官方網站](https://thjcc.org/)。
+
+---
+
+# 題目筆記
+好廢話說完了，就直接講一下我做題目的心得筆記吧！  
+啊由於題目實在太多多多多多多多多了，所以我將我的筆記分成9份（包含這份），所以呢，你們可以點下方快速傳送到你們想看的類別喔！
+1.    [THJCC 2026 CTF Writeup 1 - Welcome](http://pg72.tw/posts/thjcc-2026-writeup-1/)
+2.    [THJCC 2026 CTF Writeup 2 - Reverse](http://pg72.tw/posts/thjcc-2026-writeup-2/)
+3.    [THJCC 2026 CTF Writeup 3 - Misc](http://pg72.tw/posts/thjcc-2026-writeup-3/)
+4.    [THJCC 2026 CTF Writeup 4 - Forensics](http://pg72.tw/posts/thjcc-2026-writeup-4/)
+5.    [THJCC 2026 CTF Writeup 5 - Web](http://pg72.tw/posts/thjcc-2026-writeup-5/)
+6.    [THJCC 2026 CTF Writeup 6 - Pwn](http://pg72.tw/posts/thjcc-2026-writeup-6/)
+7.    [THJCC 2026 CTF Writeup 7 - AI](http://pg72.tw/posts/thjcc-2026-writeup-7/)
+8.    [THJCC 2026 CTF Writeup 8 - Crypto](http://pg72.tw/posts/thjcc-2026-writeup-8/)
+
+---
+
+# 心得
+我第一次接觸到資安CTF是在`2025 資訊社團聯合工作坊`的課程中，當時第一次使用了PicoCTF平台，由於我自己平時就會看一些資訊的東西，再加上主辦方挑的題目也沒有特別的難...? 
+
+所以就莫名其妙的就成為第三個解開[這堆謎題](https://hackmd.io/@MjmL3xnCT3epXL6i7aaUUg/BJW9kfLaJg)的人（有照片喔，當時的我不知道為什麼莫名其妙的嚴肅...?）
+![Prcie](./asset/price.jpg)
+然後過了不久，原本看到了`THJCC CTF 2025`的活動消息，我就加入伺服器想著想要挑戰看看，結果一個不小心那個禮拜忘記了，沒有參加到QwQ 
+
+於是我又等了一年，這次我就有記得了去報名了！
+
+然後寫CTF的時候，我看到了很多題目，但由於許久沒有碰這些東西也有點忘記了... 
+
+所以我就邊查資料邊寫這些題目，越寫越上手...? 於是：
+![Solved](./asset/Solved.png)
+![score](./asset/Score%20over%20Time.png)
+![Solve](./asset/Solve.png)
+反正最後就拿了個學生榜21?（如果算上那些原本可以對但沒看的題目來說的話... 可能可以到 學生榜12...? 我不知道，反正人生沒有如果，這些馬後炮就沒意義了）
+
+![21](./asset/21.png)
+
+既然不是很滿意這次的成績，我只好先在write-up的地方努力，把這次的題目都檢討一遍，能提升自己實力的同時，也有可能拿到潛力獎。
+
+期待明年的`THJCC CTF 2027`，在這期間我會努力進步的！
+
+
+# 更新歷史：
+## 題目：
+- 2025/02/23："Welcome/Welcome to THJCC CTF" to "Misc/Lock?"
+- 2025/02/24："Forensics/Ransomware" to "Forensics/CoLoR iS cOdE"
+- 2025/02/25："Web/Las Vegas" to "Web/A long time ago..."
+- 2026/02/26："Web/Secret File Viewer" to "Web/0422"
+- 2026/02/27："Web/msgboard" to "Crypto/676767"
+- 2026/02/28："Crypto/Butterfly" to "Crypto/Proof 100"
+- 2026/03/01："Crypto/Proof 100" to "Crypto/Shifting...?" 
