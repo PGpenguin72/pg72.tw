@@ -1,6 +1,6 @@
 ---
 title: THJCC 2026 CTF Writeup 5 - Web
-published: 2026-02-25
+published: 2026-02-23
 updated: 2026-03-01
 description: 這篇是Web分類，所有和網站相關的題目都在這喔！
 image: "./asset/cover.png"

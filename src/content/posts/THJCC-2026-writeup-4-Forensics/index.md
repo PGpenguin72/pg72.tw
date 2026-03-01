@@ -1,6 +1,6 @@
 ---
 title: THJCC 2026 CTF Writeup 4 - Forensics
-published: 2026-02-24
+published: 2026-02-23
 updated: 2026-03-01
 description: 這篇是Forensics分類，這個好像還蠻簡單的(?
 image: "./asset/cover.png"

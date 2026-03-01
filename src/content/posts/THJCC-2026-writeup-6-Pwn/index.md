@@ -1,6 +1,6 @@
 ---
 title: THJCC 2026 CTF Writeup 6 - Pwn
-published: 2026-02-27
+published: 2026-02-23
 updated: 2026-03-01
 description: 這篇是Pwn分類，就不提了，太爛了:(
 image: "./asset/cover.png"
