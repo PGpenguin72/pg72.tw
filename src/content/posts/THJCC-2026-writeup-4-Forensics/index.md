@@ -4,7 +4,7 @@ published: 2026-02-23
 updated: 2026-03-01
 description: 這篇是Forensics分類，這個好像還蠻簡單的(?
 image: "./asset/cover.png"
-ogImage: 'https://pg72.tw/og/thjcc-2026-writeup.png'
+ogImage: 'https://pg72.tw/og/thjcc-2026-writeup-4-forensics.png'
 tags: [THJCC, CTF, 資安]
 category: 程式
 draft: false
