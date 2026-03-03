@@ -8,6 +8,9 @@ ogImage: 'https://pg72.tw/og/thjcc-2026-writeup-0.png'
 tags: [THJCC, CTF, 資安]
 category: 程式
 draft: false
+series:
+  id: thjcc-2026
+  role: main
 ---
 
 # 前言
@@ -39,20 +42,6 @@ THJCC CTF 不僅是競爭舞台，更是學習與交流的平台。
 
 ---
 
-# 題目筆記
-好廢話說完了，就直接講一下我做題目的心得筆記吧！  
-啊由於題目實在太多多多多多多多多了，所以我將我的筆記分成9份（包含這份），所以呢，你們可以點下方快速傳送到你們想看的類別喔！
-1.    [THJCC 2026 CTF Writeup 1 - Welcome](http://pg72.tw/posts/thjcc-2026-writeup-1/)
-2.    [THJCC 2026 CTF Writeup 2 - Reverse](http://pg72.tw/posts/thjcc-2026-writeup-2/)
-3.    [THJCC 2026 CTF Writeup 3 - Misc](http://pg72.tw/posts/thjcc-2026-writeup-3/)
-4.    [THJCC 2026 CTF Writeup 4 - Forensics](http://pg72.tw/posts/thjcc-2026-writeup-4/)
-5.    [THJCC 2026 CTF Writeup 5 - Web](http://pg72.tw/posts/thjcc-2026-writeup-5/)
-6.    [THJCC 2026 CTF Writeup 6 - Pwn](http://pg72.tw/posts/thjcc-2026-writeup-6/)
-7.    [THJCC 2026 CTF Writeup 7 - AI](http://pg72.tw/posts/thjcc-2026-writeup-7/)
-8.    [THJCC 2026 CTF Writeup 8 - Crypto](http://pg72.tw/posts/thjcc-2026-writeup-8/)
-
----
-
 # 心得
 我第一次接觸到資安CTF是在`2025 資訊社團聯合工作坊`的課程中，當時第一次使用了PicoCTF平台，由於我自己平時就會看一些資訊的東西，再加上主辦方挑的題目也沒有特別的難...? 
 
@@ -76,6 +65,37 @@ THJCC CTF 不僅是競爭舞台，更是學習與交流的平台。
 
 期待明年的`THJCC CTF 2027`，在這期間我會努力進步的！
 
+---
+
+# Bonus：
+最近玩CTF玩到有點上頭了，於是我搞了一個「非常簡單」的小 CTF，主要用到這次 THJCC CTF 2026 的一些技巧（也有少數額外小延伸），有興趣可以來玩玩！
+
+## 題目內容：
+- 一個奇怪的檔案：https://file.pg72.tw/share/-ui1zDOk
+- 繳交區：https://ctf.pg72.tw/
+
+## 獎勵：
+> 第一名 7-11 100 元商品卡乙張（記得截圖最後解出畫面 + DM 我）
+> (備註：非在台人士可兌換成`"價值4.99 USD 的 Discord裝飾"`)
+
+## 規則 / 說明：
+> 1. 題目都由「奇怪的音樂」這個檔案一路展開，請先下載再慢慢挖。
+> 2. 本次所有題目都不需要攻擊伺服器，禁止對 *.pg72.tw 進行掃描、爆破或任何惡意攻擊。
+> 3. 禁止暴力亂猜 Flag，如有異常大量提交或可疑行為，將直接取消資格。
+> 4. 第一名請提交簡單 Writeup（過程筆記即可），如果沒有提交將會取消領獎資格並順位。
+> 5. 第一名成功解題後將會公布官方WP，但還是可以繼續提交，就算排名而已。
+
+> [!IMPORTANT]
+> 規則最終解釋權由 [PGpenguin72](https://pg72.tw) 所有。
+
+## Hint：
+### First Hint, Release On Mar. 3rd：
+- Part1 : :spoiler[.zip]
+- Part2 : :spoiler[Slow scan TV]
+- Part3 : :spoiler[00:14 ~ 00:17]
+
+---
+
 # 更新歷史：
 ## 題目：
 - 2025/02/23："Welcome/Welcome to THJCC CTF" to "Misc/Lock?"
@@ -85,3 +105,9 @@ THJCC CTF 不僅是競爭舞台，更是學習與交流的平台。
 - 2026/02/27："Web/msgboard" to "Crypto/676767"
 - 2026/02/28："Crypto/Butterfly" to "Crypto/Proof 100"
 - 2026/03/01："Crypto/Proof 100" to "Crypto/Shifting...?" 
+
+---
+
+# 版權：
+1. 本文之封面圖攝取自 [THJCC官方網站](https://thjcc.org/)。
+2. Bonus的音樂版權屬於 [Jamedo.com Daylight by.LEXMusic](https://www.jamendo.com/album/518469/daylight)  。

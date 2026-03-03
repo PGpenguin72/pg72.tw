@@ -1,0 +1,117 @@
+---
+import { getPostUrlBySlug } from "@utils/url-utils";
+
+interface SeriesItem {
+	slug: string;
+	title: string;
+	order?: number;
+}
+
+interface Props {
+	title?: string;
+	main?: SeriesItem;
+	parts: SeriesItem[];
+	currentSlug: string;
+}
+
+const { title, main, parts, currentSlug } = Astro.props;
+const hasParts = parts.length > 0;
+const currentIsMain = main?.slug === currentSlug;
+
+const partItems = parts.map((part, index) => ({
+	...part,
+	displayOrder: part.order ?? index + 1,
+}));
+const leftParts = partItems.filter((part) => part.displayOrder % 2 === 1);
+const rightParts = partItems.filter((part) => part.displayOrder % 2 === 0);
+---
+
+<div class="card-base px-6 py-5 mb-6">
+	{main && (
+		<div>
+			<div class="text-xs uppercase tracking-widest text-black/60 dark:text-white/60 mb-2">
+				主文章
+			</div>
+			{currentIsMain ? (
+				<div class="font-bold text-black/90 dark:text-white/90">{main.title}</div>
+			) : (
+				<a
+					href={getPostUrlBySlug(main.slug)}
+					class="font-bold text-black/90 dark:text-white/90 hover:text-[var(--primary)] transition rounded-md -mx-1 px-1 hover:bg-black/5 dark:hover:bg-white/5"
+				>
+					{main.title}
+				</a>
+			)}
+		</div>
+	)}
+
+	{hasParts && (
+		<div class="mt-4">
+			<div class="text-xs uppercase tracking-widest text-black/60 dark:text-white/60 mb-2">
+				附屬文章
+			</div>
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-2">
+				<div class="flex flex-col gap-2">
+					{leftParts.map((part) => {
+						const isCurrent = part.slug === currentSlug;
+						return (
+							<div class="flex items-start gap-3">
+								<div
+									class:list={[
+										"mt-2 h-1.5 w-1.5 rounded-full",
+										{
+											"bg-[var(--primary)]": isCurrent,
+											"bg-black/40 dark:bg-white/40": !isCurrent,
+										},
+									]}
+								></div>
+								{isCurrent ? (
+									<div class="font-bold text-black/90 dark:text-white/90">
+										{part.title}
+									</div>
+								) : (
+									<a
+										href={getPostUrlBySlug(part.slug)}
+										class="text-black/80 dark:text-white/80 hover:text-[var(--primary)] transition rounded-md -mx-1 px-1 hover:bg-black/5 dark:hover:bg-white/5"
+									>
+										{part.title}
+									</a>
+								)}
+							</div>
+						);
+					})}
+				</div>
+				<div class="flex flex-col gap-2">
+					{rightParts.map((part) => {
+						const isCurrent = part.slug === currentSlug;
+						return (
+							<div class="flex items-start gap-3">
+								<div
+									class:list={[
+										"mt-2 h-1.5 w-1.5 rounded-full",
+										{
+											"bg-[var(--primary)]": isCurrent,
+											"bg-black/40 dark:bg-white/40": !isCurrent,
+										},
+									]}
+								></div>
+								{isCurrent ? (
+									<div class="font-bold text-black/90 dark:text-white/90">
+										{part.title}
+									</div>
+								) : (
+									<a
+										href={getPostUrlBySlug(part.slug)}
+										class="text-black/80 dark:text-white/80 hover:text-[var(--primary)] transition rounded-md -mx-1 px-1 hover:bg-black/5 dark:hover:bg-white/5"
+									>
+										{part.title}
+									</a>
+								)}
+							</div>
+						);
+					})}
+				</div>
+			</div>
+		</div>
+	)}
+</div>

@@ -3,12 +3,22 @@ import I18nKey from "@i18n/i18nKey";
 import { i18n } from "@i18n/translation";
 import { getCategoryUrl } from "@utils/url-utils.ts";
 
-// // Retrieve posts and sort them by publication date
-async function getRawSortedPosts() {
-	const allBlogPosts = await getCollection("posts", ({ data }) => {
-		return import.meta.env.PROD ? data.draft !== true : true;
-	});
+type RawSortedPostsOptions = {
+	includeSeriesParts?: boolean;
+};
 
+function isSeriesPart(data: CollectionEntry<"posts">["data"]) {
+	return data.series?.role === "part";
+}
+
+// // Retrieve posts and sort them by publication date
+async function getRawSortedPosts(options: RawSortedPostsOptions = {}) {
+	const { includeSeriesParts = true } = options;
+	const allBlogPosts = await getCollection("posts", ({ data }) => {
+		if (import.meta.env.PROD && data.draft === true) return false;
+		if (!includeSeriesParts && isSeriesPart(data)) return false;
+		return true;
+	});
 	const sorted = allBlogPosts.sort((a, b) => {
 		const dateA = new Date(a.data.published);
 		const dateB = new Date(b.data.published);
@@ -31,12 +41,29 @@ export async function getSortedPosts() {
 
 	return sorted;
 }
+
+export async function getSortedListablePosts() {
+	const sorted = await getRawSortedPosts({ includeSeriesParts: false });
+	const seriesTotals = await getSeriesTotalsMap();
+
+	for (const post of sorted) {
+		const seriesId = post.data.series?.id;
+		if (!seriesId) continue;
+		const totals = seriesTotals.get(seriesId);
+		if (!totals) continue;
+		post.data.seriesWordCount = totals.words;
+		post.data.seriesMinuteCount = totals.minutes;
+	}
+
+	return sorted;
+}
+
 export type PostForList = {
 	slug: string;
 	data: CollectionEntry<"posts">["data"];
 };
 export async function getSortedPostsList(): Promise<PostForList[]> {
-	const sortedFullPosts = await getRawSortedPosts();
+	const sortedFullPosts = await getRawSortedPosts({ includeSeriesParts: false });
 
 	// delete post.body
 	const sortedPostsList = sortedFullPosts.map((post) => ({
@@ -53,7 +80,9 @@ export type Tag = {
 
 export async function getTagList(): Promise<Tag[]> {
 	const allBlogPosts = await getCollection<"posts">("posts", ({ data }) => {
-		return import.meta.env.PROD ? data.draft !== true : true;
+		if (import.meta.env.PROD && data.draft === true) return false;
+		if (isSeriesPart(data)) return false;
+		return true;
 	});
 
 	const countMap: { [key: string]: number } = {};
@@ -81,7 +110,9 @@ export type Category = {
 
 export async function getCategoryList(): Promise<Category[]> {
 	const allBlogPosts = await getCollection<"posts">("posts", ({ data }) => {
-		return import.meta.env.PROD ? data.draft !== true : true;
+		if (import.meta.env.PROD && data.draft === true) return false;
+		if (isSeriesPart(data)) return false;
+		return true;
 	});
 	const count: { [key: string]: number } = {};
 	allBlogPosts.forEach((post: { data: { category: string | null } }) => {
@@ -113,4 +144,47 @@ export async function getCategoryList(): Promise<Category[]> {
 		});
 	}
 	return ret;
+}
+
+export async function getSeriesEntries(seriesId: string) {
+	const allBlogPosts = await getCollection("posts", ({ data }) => {
+		if (import.meta.env.PROD && data.draft === true) return false;
+		return data.series?.id === seriesId;
+	});
+
+	return allBlogPosts.sort((a, b) => {
+		const orderA = a.data.series?.order ?? null;
+		const orderB = b.data.series?.order ?? null;
+		if (orderA !== null && orderB !== null) return orderA - orderB;
+		if (orderA !== null) return -1;
+		if (orderB !== null) return 1;
+		const dateA = new Date(a.data.published);
+		const dateB = new Date(b.data.published);
+		return dateA > dateB ? 1 : -1;
+	});
+}
+
+async function getSeriesTotalsMap() {
+	const allBlogPosts = await getCollection("posts", ({ data }) => {
+		if (import.meta.env.PROD && data.draft === true) return false;
+		return Boolean(data.series?.id);
+	});
+
+	const totals = new Map<string, { words: number; minutes: number }>();
+	await Promise.all(
+		allBlogPosts.map(async (entry) => {
+			const seriesId = entry.data.series?.id;
+			if (!seriesId) return;
+			const { remarkPluginFrontmatter } = await entry.render();
+			const words = remarkPluginFrontmatter.words ?? 0;
+			const minutes = remarkPluginFrontmatter.minutes ?? 0;
+			const prev = totals.get(seriesId) ?? { words: 0, minutes: 0 };
+			totals.set(seriesId, {
+				words: prev.words + words,
+				minutes: prev.minutes + minutes,
+			});
+		}),
+	);
+
+	return totals;
 }
