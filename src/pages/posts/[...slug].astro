@@ -7,7 +7,11 @@ import SeriesPanel from "@components/SeriesPanel.astro";
 import I18nKey from "@i18n/i18nKey";
 import { i18n } from "@i18n/translation";
 import MainGridLayout from "@layouts/MainGridLayout.astro";
-import { getSeriesEntries, getSortedPosts } from "@utils/content-utils";
+import {
+	getSeriesEntries,
+	getSortedListablePosts,
+	getSortedPosts,
+} from "@utils/content-utils";
 import { getDir, getPostUrlBySlug } from "@utils/url-utils";
 import { Icon } from "astro-icon/components";
 import { licenseConfig } from "src/config";
@@ -51,6 +55,26 @@ let seriesNext:
 	  }
 	| undefined;
 let seriesEntries: CollectionEntry<"posts">[] = [];
+let listablePrev:
+	| {
+			slug: string;
+			title: string;
+	  }
+	| undefined;
+let listableNext:
+	| {
+			slug: string;
+			title: string;
+	  }
+	| undefined;
+let listableNextAfterMain:
+	| {
+			slug: string;
+			title: string;
+	  }
+	| undefined;
+
+const listablePosts = await getSortedListablePosts();
 
 if (seriesId) {
 	seriesEntries = await getSeriesEntries(seriesId);
@@ -99,21 +123,57 @@ if (seriesId) {
 
 }
 
+const listableIndex = listablePosts.findIndex((item) => item.slug === entry.slug);
+if (listableIndex >= 0) {
+	const prevItem = listablePosts[listableIndex + 1];
+	const nextItem = listablePosts[listableIndex - 1];
+	listablePrev = prevItem
+		? { slug: prevItem.slug, title: prevItem.data.title }
+		: undefined;
+	listableNext = nextItem
+		? { slug: nextItem.slug, title: nextItem.data.title }
+		: undefined;
+}
+
+const mainListableIndex = seriesMain
+	? listablePosts.findIndex((item) => item.slug === seriesMain?.slug)
+	: -1;
+if (mainListableIndex >= 0) {
+	for (let i = mainListableIndex - 1; i >= 0; i--) {
+		const candidate = listablePosts[i];
+		if (candidate.slug === seriesMain?.slug) continue;
+		listableNextAfterMain = {
+			slug: candidate.slug,
+			title: candidate.data.title,
+		};
+		break;
+	}
+}
+
 const navPrev =
 	seriesId && entry.data.series?.role !== "main"
 		? seriesPrev
 			? seriesPrev
 			: seriesMain
-		: entry.data.prevSlug
-			? { slug: entry.data.prevSlug, title: entry.data.prevTitle }
-			: undefined;
+		: seriesId && entry.data.series?.role === "main"
+			? listablePrev
+			: listablePrev ?? (entry.data.prevSlug
+					? { slug: entry.data.prevSlug, title: entry.data.prevTitle }
+					: undefined);
+
+const seriesNextFiltered =
+	seriesMain && seriesNext?.slug === seriesMain.slug ? undefined : seriesNext;
 
 const navNext =
-	seriesId && seriesNext
-		? seriesNext
-		: entry.data.nextSlug
-			? { slug: entry.data.nextSlug, title: entry.data.nextTitle }
-			: undefined;
+	seriesId && entry.data.series?.role !== "main"
+		? seriesNextFiltered ?? listableNextAfterMain
+		: seriesId && seriesNextFiltered
+			? seriesNextFiltered
+			: seriesId && entry.data.series?.role === "main"
+				? listableNext
+				: listableNext ?? (entry.data.nextSlug
+						? { slug: entry.data.nextSlug, title: entry.data.nextTitle }
+						: undefined);
 
 const jsonLd = {
 	"@context": "https://schema.org",

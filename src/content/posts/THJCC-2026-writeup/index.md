@@ -1,7 +1,7 @@
 ---
 title: THJCC 2026 CTF Writeup
 published: 2026-02-23
-updated: 2026-03-01
+updated: 2026-03-03
 description: 這是我這次做這個THJCC CTF的筆記喔！
 image: "./asset/cover.png"
 ogImage: 'https://pg72.tw/og/thjcc-2026-writeup-0.png'
@@ -75,8 +75,8 @@ THJCC CTF 不僅是競爭舞台，更是學習與交流的平台。
 - 繳交區：https://ctf.pg72.tw/
 
 ## 獎勵：
-> 第一名 7-11 100 元商品卡乙張（記得截圖最後解出畫面 + DM 我）
-> (備註：非在台人士可兌換成`"價值4.99 USD 的 Discord裝飾"`)
+> 第一名 7-11 300 元商品卡乙張（記得截圖最後解出畫面 + DM 我）  
+> (備註：非在台人士可兌換成`"Discord Nitro 1 Month"`)
 
 ## 規則 / 說明：
 > 1. 題目都由「奇怪的音樂」這個檔案一路展開，請先下載再慢慢挖。
@@ -93,6 +93,14 @@ THJCC CTF 不僅是競爭舞台，更是學習與交流的平台。
 - Part1 : :spoiler[.zip]
 - Part2 : :spoiler[Slow scan TV]
 - Part3 : :spoiler[00:14 ~ 00:17]
+
+## 修補：
+由於我第一次設計這種題目，然後我當時設定的時候不小心把密碼複製錯誤了，導致會沒辦法正確將 `某個.xslx` 解出來。
+
+如果你已經遇到這個問題請使用這個xslx，並且我將移除裡面的加密鎖。
+
+下載密碼為你解出的.xslx檔案名稱（不需要副檔名
+https://file.pg72.tw/share/d6qSGFoW
 
 ---
 
