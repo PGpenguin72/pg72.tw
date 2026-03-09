@@ -1,5 +1,5 @@
 ---
-title: 2026/01/03 APCS 臨時抱佛腳筆記
+title: Python
 published: 2026-01-03
 updated: 2026-02-08
 description: '反正這裡會幫忙複習APCS觀念會用到的Python東西，還有一些題目可以練習。'
@@ -8,6 +8,9 @@ ogImage: 'https://pg72.tw/og/2026-01-03-apcs-cram-notes.png'
 tags: ["APCS", "Python"]
 category: '筆記'
 draft: false 
+series:
+  id: apcs_cram_note
+  order: 1
 ---
 :::important
 本筆記初稿由 [Perplexity](https://www.perplexity.ai/) 協助生成架構與提供建議，由 [PGpenguin72](https://pg72.tw) 進行文章撰寫修改內容。
