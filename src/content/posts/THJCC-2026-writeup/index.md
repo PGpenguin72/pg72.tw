@@ -94,6 +94,12 @@ THJCC CTF 不僅是競爭舞台，更是學習與交流的平台。
 - Part2 : :spoiler[Slow scan TV]
 - Part3 : :spoiler[00:14 ~ 00:17]
 
+### Second Hint, Release On Mar. 4th:
+- Part1 : :spoiler[Password is password]
+- Part2 : :spoiler[Just shifting.]
+- Part3 : :spoiler[How to see the sound?]
+這次提示感覺給的不好 但我詞窮了:（
+
 ## 修補：
 由於我第一次設計這種題目，然後我當時設定的時候不小心把密碼複製錯誤了，導致會沒辦法正確將 `某個.xslx` 解出來。
 
