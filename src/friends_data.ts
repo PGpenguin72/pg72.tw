@@ -68,6 +68,18 @@ export const friends: Friend[] = [
 		description: "林兆弘的小弟",
 	},
 	{
+		name: "zackzheng可樂",
+		url: "https://zack.siiway.org/",
+		avatar: "/friends/zackzheng可樂.png",
+		description: "只是個普通的學生",
+	},
+	{
+		name: "安姆",
+		url: "https://www.threads.com/@anmu._.uwu",
+		avatar: "/friends/安姆.png",
+		description: "我是會畫畫的超絕炫炮RGB七彩霓虹章魚🐙",
+	},
+	{
 		name: "伊宸",
 		url: "https://www.instagram.com/yii._.0305",
 		avatar: "/friends/伊宸.jpg",

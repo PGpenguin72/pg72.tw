@@ -37,18 +37,18 @@ export const devices: DeviceMap = {
 		{
 			name: "iPad Air (第五代)",
 			image:
-				"https://cdsassets.apple.com/live/SZLF0YNV/images/sp/111887_sp866-ipad-air-5gen.png",
-			specs: "星光色 / 256GB",
-			description: "第一代的M晶片iPad Air",
-			link: "https://support.apple.com/zh-tw/111887",
+				"https://cdsassets.apple.com/live/7WUAS350/images/ipad/spring-2024-4.png",
+			specs: "太空灰色 / 256GB",
+			description: "第二代的M晶片iPad Air",
+			link: "https://support.apple.com/zh-tw/119894",
 		},
 		{
-			name: "Apple Pencil (第二代)",
+			name: "Apple Pencil Pro",
 			image:
-				"https://cdsassets.apple.com/live/SZLF0YNV/images/sp/111889_apple-pencil-2.png",
+				"https://cdsassets.apple.com/live/7WUAS350/images/tech-specs/ipad_apple_pencil.png",
 			specs: "沒啥特殊規格",
 			description: "一隻還不錯用的筆喔",
-			link: "https://support.apple.com/zh-tw/111889",
+			link: "https://support.apple.com/zh-tw/120123",
 		},
 		{
 			name: "Macbook Pro (14 英寸，M4，2024年)",
