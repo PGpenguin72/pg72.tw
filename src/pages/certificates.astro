@@ -1,0 +1,13 @@
+---
+import CertificateSection from "../components/CertificateSection.astro";
+import MainGridLayout from "../layouts/MainGridLayout.astro";
+export const prerender = true;
+---
+
+<MainGridLayout
+	title="證書/證明"
+	description="我的證書/證明清單"
+	ogImage="https://pg72.tw/og/certificates.png"
+>
+	<CertificateSection />
+</MainGridLayout>

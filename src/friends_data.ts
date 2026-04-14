@@ -37,6 +37,12 @@ export const friends: Friend[] = [
 		description: "一個認真的maimai玩家",
 	},
 	{
+		name: "zackzheng可樂",
+		url: "https://zack.siiway.org/",
+		avatar: "/friends/zackzheng可樂.png",
+		description: "只是個普通的學生",
+	},
+	{
 		name: "一葉",
 		url: "https://www.threads.com/@mooncakesi0723",
 		avatar: "/friends/一葉.png",
@@ -64,15 +70,10 @@ export const friends: Friend[] = [
 	{
 		name: "皮卡丘",
 		url: "https://www.instagram.com/ssarc33_pikachu",
-		avatar: "/friends/皮卡丘.jpg",
+		avatar: "/friends/皮卡丘.png",
 		description: "林兆弘的小弟",
 	},
-	{
-		name: "zackzheng可樂",
-		url: "https://zack.siiway.org/",
-		avatar: "/friends/zackzheng可樂.png",
-		description: "只是個普通的學生",
-	},
+
 	{
 		name: "安姆",
 		url: "https://www.threads.com/@anmu._.uwu",
@@ -109,6 +110,12 @@ export const friends: Friend[] = [
 		url: "https://www.pixiv.net/users/102307223",
 		avatar: "/friends/某個蘿莉控.png",
 		description: "小蘿莉🥵🥵🥵🥵😋😋😋😋",
+	},
+	{
+		name: "淳",
+		url: "https://chuen666666.github.io/",
+		avatar: "/friends/淳.jpg",
+		description: "群除我佬，我是肺霧",
 	},
 	{
 		name: "雪狐",

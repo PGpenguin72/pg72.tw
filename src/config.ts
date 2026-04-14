@@ -67,6 +67,10 @@ export const navBarConfig: NavBarConfig = {
 					name: "裝置",
 					url: "/device/",
 				},
+				{
+					name: "證書/證明",
+					url: "/certificates/",
+				},
 			],
 		},
 		{

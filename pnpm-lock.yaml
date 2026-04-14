@@ -113,6 +113,9 @@ importers:
       remark-directive-rehype:
         specifier: ^0.4.2
         version: 0.4.2
+      remark-gfm:
+        specifier: ^4.0.1
+        version: 4.0.1
       remark-github-admonitions-to-directives:
         specifier: ^1.0.5
         version: 1.0.5
