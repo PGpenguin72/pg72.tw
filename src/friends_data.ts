@@ -31,6 +31,12 @@ export const friends: Friend[] = [
 		description: "急需好心人士贊助M.2 SSD(ma mum is kinda homeless)",
 	},
 	{
+		name: "twcat0503",
+		url: "https://twcat0503.org",
+		avatar: "/friends/twcat0503.jpg",
+		description: "一隻貓",
+	},
+	{
 		name: "weslyee",
 		url: "https://discord.com/users/1099135720423182428",
 		avatar: "/friends/weslyee.jpg",
