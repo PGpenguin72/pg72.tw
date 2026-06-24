@@ -19,10 +19,22 @@ export const friends: Friend[] = [
 		description: "你好",
 	},
 	{
+		name: "Leaf_0223",
+		url: "https://51511.github.io/Personal-Website/",
+		avatar: "https://i.meee.com.tw/Tsv3s60.jpg",
+		description: "是個人，會呼吸",
+	},
+	{
 		name: "Mark",
 		url: "https://zerojudge.tw/UserStatistic?id=330356",
 		avatar: "/friends/Mark.jpg",
 		description: "Kram",
+	},
+	{
+		name: "R3X DJ",
+		url: "https://r3xdj.github.io/",
+		avatar: "https://r3xdj.github.io/img/icy_star.png",
+		description: "對不起我都在 Vibe Hacking",
 	},
 	{
 		name: "Stevenek0n",
@@ -162,7 +174,7 @@ export const friends: Friend[] = [
 	{
 		name: "糖豆魚",
 		url: "https://ptd.tw/",
-		avatar: "https://ptd.tw/avatar.png",
+		avatar: "https://ptd.tw/avatar.jpg",
 		description: "熱於探索的高中生",
 	},
 	{

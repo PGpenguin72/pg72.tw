@@ -13,7 +13,14 @@ export type CertificateMap = Record<string, CertificateItem[]>;
 export const certificates: CertificateMap = {
 	全部: [
 		{
-			name: "國際資訊奧林匹亞競賽",
+			name: "AIS3 MyFirstCTF",
+			issuer: "參與證明",
+			date: "2026-03",
+			description: "",
+			image: "/certificates/mfctf2026.png",
+		},
+		{
+			name: "國際資訊奧林匹亞競賽選訓營初選",
 			issuer: "100分/500分",
 			date: "2026-03",
 			description: "",
