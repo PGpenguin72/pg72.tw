@@ -295,20 +295,12 @@ export const devices: DeviceMap = {
 			link: "hhttps://ikfaudio.com/products/ikfkingpro?variant=50240033685783",
 		},
 		{
-			name: "狼蛛F2088 Pro 機械鍵盤",
+			name: "Logitech G Pro X TKL Rapid",
 			image:
-				"https://www.aulacn.com/wp-content/uploads/2021/08/1726039917-F2088-%E7%B2%BE%E8%8B%B1%E7%89%88-800-1.png",
-			specs: "藍白混光版 / 青軸",
-			description: "便宜的機械鍵盤",
-			link: "https://www.aulacn.com/product-detail/f2088",
-		},
-		{
-			name: "狼蛛S50 滑鼠",
-			image:
-				"https://www.aulacn.com/wp-content/uploads/2021/08/1726039270-S50-800-1.png",
-			specs: "白色",
-			description: "一個有線滑鼠",
-			link: "https://www.aulacn.com/product-detail/s50",
+				"https://resource.logitechg.com/w_2443,h_1374,ar_16:9,c_pad,q_auto,f_auto,dpr_2.0/d_transparent.gif/content/dam/gaming/en/products/pro-x-tkl-rapid/gallery/pro-x-tkl-rapid-black-gallery-1-cht.png",
+			specs: "黑色",
+			description: "好用的磁軸鍵盤",
+			link: "https://www.logitechg.com/zh-tw/shop/p/pro-x-tkl-rapid",
 		},
 		{
 			name: "狼蛛N-170 音箱",

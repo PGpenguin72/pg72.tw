@@ -32,8 +32,8 @@ export const friends: Friend[] = [
 	},
 	{
 		name: "R3X DJ",
-		url: "https://r3xdj.github.io/",
-		avatar: "https://r3xdj.github.io/img/icy_star.png",
+		url: "https://r3xdj.pages.dev/",
+		avatar: "https://r3xdj.pages.dev/img/icy_star.png",
 		description: "對不起我都在 Vibe Hacking",
 	},
 	{
