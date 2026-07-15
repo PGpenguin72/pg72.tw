@@ -129,6 +129,12 @@ export const friends: Friend[] = [
 		avatar: "/friends/某個蘿莉控.png",
 		description: "小蘿莉🥵🥵🥵🥵😋😋😋😋",
 	},
+    {
+        name: "烤鴨",
+        url: "https://www.gdtw.qzz.io/",
+        avatar: "https://avatars.githubusercontent.com/u/211126843?v=4&size=256",
+        description: "好吃烤鴨",
+    },
 	{
 		name: "淳",
 		url: "https://chuen666666.github.io/",
