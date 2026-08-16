@@ -1,5 +1,5 @@
 ---
-title: THJCC 3rd CTF SE Official Writeup
+title: THJCC 3rd SE CTF Official Writeup
 published: 2026-08-17
 updated: 2026-08-17
 description: 這是官方詳解，中文與 English 版本會放在子文章中。
