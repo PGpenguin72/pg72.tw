@@ -625,7 +625,7 @@ FLAG{n0n_r3curs1v3_f1lt3rs_g3t_nest3d_by_d0ts}
 
 ## Web / IDOR
 
-## [MyJournal](https://ctf.ga24.me/challenges#MyJournal-5) (150)
+### [MyJournal](https://ctf.ga24.me/challenges#MyJournal-5) (150)
 
 #### 題目
 
