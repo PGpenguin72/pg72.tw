@@ -7,7 +7,7 @@ image: ""
 ogImage: ""
 tags: [THJCC, CTF, 資安]
 category: 程式
-draft: false
+draft: true
 series:
   id: thjcc-3rd-se-writeup
   title: THJCC 3rd CTF SE Official Writeup
