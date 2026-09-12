@@ -7,7 +7,7 @@ image: ""
 ogImage: 'https://pg72.tw/og/sdlearning-11302.png'
 tags: ["自主學習", "Discord", "Python", "Discord.py", "JSON"]
 category: '報告'
-draft: true
+draft: false
 lang: ''
 ---
 
