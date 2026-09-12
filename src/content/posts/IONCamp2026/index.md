@@ -38,7 +38,7 @@ https://hackmd.io/wW5JUPq-SMO-o7lfsOoKFA
 ![拯救 Mococo 題目](./assets/Mococo1.jpeg)
 ![拯救 Mococo 題目](./assets/Mococo2.jpeg)
 在跟工作人員確認後我就離開教室，看到桌上有個盒子（有鎖）還有一張紙，他寫著整個計劃，我看了挺頭痛的。但我注意到他有粗體黑色數字，不過我還是沒想到密碼。耗費了許久，我甚至還有想要聽鎖，但被制止了:( 我看了看這些數字，我發現我可以把它全加起來，然後組成三位數（上面一個，中間一個，下面一個），然後會對應到114？但出題者看到說我很接近，我就想我可能加錯了，我就試試看轉一點點個位數，結果就開了👍
-![拯救 Mococo 題目](./assets/Mococo3.jpeg)
+![拯救 Mococo 題目](./assets/mococo3.jpeg)
 我打開後我拿了一張紙條，把紙條放回去後，鎖起來挑性他們說我一定是最快解完謎題的人www 
 ![拯救 Mococo 題目](./assets/Mococo4.jpeg)
 
