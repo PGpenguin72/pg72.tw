@@ -42,7 +42,11 @@ export function LinkCardComponent(properties, children) {
 				? fallbackIcon
 				: `https://www.google.com/s2/favicons?sz=128&domain=${encodeURIComponent(hostForFallback)}`;
 
-	const nTitle = h(`span#${cardUuid}-title`, { class: "lc-title" }, "Loading...");
+	const nTitle = h(
+		`span#${cardUuid}-title`,
+		{ class: "lc-title" },
+		"Loading...",
+	);
 	const nHost = h(`span#${cardUuid}-host`, { class: "lc-host" }, url);
 	const nText = h(`div#${cardUuid}-text`, { class: "lc-text" }, [
 		nTitle,

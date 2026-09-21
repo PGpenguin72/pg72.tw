@@ -87,7 +87,7 @@ const showTabs = categories.length > 1;
 
 </section>
 
-<script define:vars={{ certificates, defaultCategory, idPrefix, showTabs }}>
+<script is:inline define:vars={{ certificates, defaultCategory, idPrefix, showTabs }}>
 	const root = document.getElementById(idPrefix);
 	if (root) {
 		const tabs = root.querySelectorAll(".certificate-tab");

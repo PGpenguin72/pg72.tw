@@ -63,7 +63,9 @@ export type PostForList = {
 	data: CollectionEntry<"posts">["data"];
 };
 export async function getSortedPostsList(): Promise<PostForList[]> {
-	const sortedFullPosts = await getRawSortedPosts({ includeSeriesParts: false });
+	const sortedFullPosts = await getRawSortedPosts({
+		includeSeriesParts: false,
+	});
 
 	// delete post.body
 	const sortedPostsList = sortedFullPosts.map((post) => ({

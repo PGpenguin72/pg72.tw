@@ -19,7 +19,7 @@ const hasParts = parts.length > 0;
 const currentIsMain = main?.slug === currentSlug;
 ---
 
-<div class="card-base px-6 py-5 mb-6">
+<div class="card-base px-6 py-5 mb-6" aria-label={title || "系列文章"}>
 	{main && (
 		<div>
 			<div class="text-xs uppercase tracking-widest text-black/60 dark:text-white/60 mb-2">

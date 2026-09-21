@@ -555,7 +555,10 @@ const setup = () => {
 	if (!lightbox) {
 		createPhotoSwipe()
 	}
-	window.addEventListener("pswp:refresh", () => lightbox?.refresh?.())
+	window.addEventListener("pswp:refresh", () => {
+		lightbox?.destroy()
+		createPhotoSwipe()
+	})
 	window.swup.hooks.on("page:view", () => {
 		createPhotoSwipe()
 	})

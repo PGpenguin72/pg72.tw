@@ -5,7 +5,10 @@ type Options = {
 	label?: string;
 };
 
-function hasClassName(value: Element["properties"], className: string): boolean {
+function hasClassName(
+	value: Element["properties"],
+	className: string,
+): boolean {
 	const raw = value?.className;
 	if (!raw) return false;
 	if (Array.isArray(raw)) return raw.includes(className);
@@ -22,9 +25,7 @@ export function rehypeFootnoteLabel(options: Options = {}) {
 			if (!hasClassName(node.properties, "footnotes")) return;
 
 			const heading = node.children.find(
-				(child) =>
-					child.type === "element" &&
-					/^h[1-6]$/.test(child.tagName),
+				(child) => child.type === "element" && /^h[1-6]$/.test(child.tagName),
 			);
 
 			if (!heading || heading.type !== "element") return;

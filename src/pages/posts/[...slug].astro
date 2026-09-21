@@ -1,4 +1,5 @@
 ---
+import type { CollectionEntry } from "astro:content";
 import path from "node:path";
 import Giscus from "@components/Giscus.astro";
 import License from "@components/misc/License.astro";
@@ -120,10 +121,11 @@ if (seriesId) {
 			title: seriesParts[0].title,
 		};
 	}
-
 }
 
-const listableIndex = listablePosts.findIndex((item) => item.slug === entry.slug);
+const listableIndex = listablePosts.findIndex(
+	(item) => item.slug === entry.slug,
+);
 if (listableIndex >= 0) {
 	const prevItem = listablePosts[listableIndex + 1];
 	const nextItem = listablePosts[listableIndex - 1];
@@ -157,23 +159,25 @@ const navPrev =
 			: seriesMain
 		: seriesId && entry.data.series?.role === "main"
 			? listablePrev
-			: listablePrev ?? (entry.data.prevSlug
+			: (listablePrev ??
+				(entry.data.prevSlug
 					? { slug: entry.data.prevSlug, title: entry.data.prevTitle }
-					: undefined);
+					: undefined));
 
 const seriesNextFiltered =
 	seriesMain && seriesNext?.slug === seriesMain.slug ? undefined : seriesNext;
 
 const navNext =
 	seriesId && entry.data.series?.role !== "main"
-		? seriesNextFiltered ?? listableNextAfterMain
+		? (seriesNextFiltered ?? listableNextAfterMain)
 		: seriesId && seriesNextFiltered
 			? seriesNextFiltered
 			: seriesId && entry.data.series?.role === "main"
 				? listableNext
-				: listableNext ?? (entry.data.nextSlug
+				: (listableNext ??
+					(entry.data.nextSlug
 						? { slug: entry.data.nextSlug, title: entry.data.nextTitle }
-						: undefined);
+						: undefined));
 
 const jsonLd = {
 	"@context": "https://schema.org",

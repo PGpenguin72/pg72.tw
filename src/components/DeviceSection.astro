@@ -1,6 +1,6 @@
 ---
 import { Icon } from "astro-icon/components";
-import { devices, defaultBrand } from "../data/devices";
+import { defaultBrand, devices } from "../data/devices";
 
 interface Props {
 	title?: string;
@@ -77,7 +77,7 @@ const brands = Object.keys(devices);
 	</div>
 </section>
 
-<script define:vars={{ devices, defaultBrand, idPrefix }}>
+<script is:inline define:vars={{ devices, defaultBrand, idPrefix }}>
 	const root = document.getElementById(idPrefix);
 	if (root) {
 		const brandTabs = root.querySelectorAll(".device-tab");
