@@ -7,6 +7,12 @@ export interface Friend {
 
 export const friends: Friend[] = [
 	{
+		name: "denny",
+		url: "https://denny.li",
+		avatar: "https://denny.li/images/avatar.jpg",
+		description: "我好爛正在學習資安",
+	},
+	{
 		name: "Ian",
 		url: "https://www.instagram.com/zfcsc20_koala.797347/",
 		avatar: "/friends/Ian.jpeg",
@@ -37,10 +43,22 @@ export const friends: Friend[] = [
 		description: "對不起我都在 Vibe Hacking",
 	},
 	{
+		name: "Sean Wei",
+		url: "https://sean.cat/about",
+		avatar: "https://img.sean.taipei/sean/avatar-300x.jpg",
+		description: "有人要來滑冰嗎？",
+	},
+	{
 		name: "Stevenek0n",
 		url: "https://youtube.com/@stevenek0n",
 		avatar: "/friends/Stevenek0n.jpeg",
 		description: "急需好心人士贊助M.2 SSD(ma mum is kinda homeless)",
+	},
+	{
+		name: "sworda",
+		url: "https://discord.com/users/819848621340098591",
+		avatar: "/friends/sworda.png",
+		description: "陰遊好玩",
 	},
 	{
 		name: "twcat0503",
