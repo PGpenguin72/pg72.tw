@@ -2,8 +2,12 @@ import { type CollectionEntry, getCollection } from "astro:content";
 import I18nKey from "@i18n/i18nKey";
 import { i18n } from "@i18n/translation";
 import { getCategoryUrl } from "@utils/url-utils.ts";
+import { getNowPosts } from "./now-utils";
+
+export type BlogEntry = CollectionEntry<"posts"> | CollectionEntry<"now">;
 
 type RawSortedPostsOptions = {
+	pinLatestNow?: boolean;
 	includeSeriesParts?: boolean;
 };
 
@@ -13,22 +17,27 @@ function isSeriesPart(data: CollectionEntry<"posts">["data"]) {
 
 // // Retrieve posts and sort them by publication date
 async function getRawSortedPosts(options: RawSortedPostsOptions = {}) {
-	const { includeSeriesParts = true } = options;
+	const { includeSeriesParts = true, pinLatestNow = false } = options;
 	const allBlogPosts = await getCollection("posts", ({ data }) => {
 		if (import.meta.env.PROD && data.draft === true) return false;
 		if (!includeSeriesParts && isSeriesPart(data)) return false;
 		return true;
 	});
-	const sorted = allBlogPosts.sort((a, b) => {
-		const dateA = new Date(a.data.published);
-		const dateB = new Date(b.data.published);
-		return dateA > dateB ? -1 : 1;
-	});
+	const allNowPosts = await getNowPosts();
+	const sorted: BlogEntry[] = [...allBlogPosts, ...allNowPosts].sort(
+		(a, b) =>
+			b.data.published.getTime() - a.data.published.getTime() ||
+			a.slug.localeCompare(b.slug),
+	);
+	if (pinLatestNow) {
+		const index = sorted.findIndex((post) => post.collection === "now");
+		if (index > 0) sorted.unshift(...sorted.splice(index, 1));
+	}
 	return sorted;
 }
 
 export async function getSortedPosts() {
-	const sorted = await getRawSortedPosts();
+	const sorted = await getRawSortedPosts({ pinLatestNow: true });
 
 	for (let i = 1; i < sorted.length; i++) {
 		sorted[i].data.nextSlug = sorted[i - 1].slug;
@@ -43,7 +52,10 @@ export async function getSortedPosts() {
 }
 
 export async function getSortedListablePosts() {
-	const sorted = await getRawSortedPosts({ includeSeriesParts: false });
+	const sorted = await getRawSortedPosts({
+		includeSeriesParts: false,
+		pinLatestNow: true,
+	});
 	const seriesTotals = await getSeriesTotalsMap();
 
 	for (const post of sorted) {
@@ -81,11 +93,7 @@ export type Tag = {
 };
 
 export async function getTagList(): Promise<Tag[]> {
-	const allBlogPosts = await getCollection<"posts">("posts", ({ data }) => {
-		if (import.meta.env.PROD && data.draft === true) return false;
-		if (isSeriesPart(data)) return false;
-		return true;
-	});
+	const allBlogPosts = await getRawSortedPosts({ includeSeriesParts: false });
 
 	const countMap: { [key: string]: number } = {};
 	allBlogPosts.forEach((post: { data: { tags: string[] } }) => {
@@ -111,11 +119,7 @@ export type Category = {
 };
 
 export async function getCategoryList(): Promise<Category[]> {
-	const allBlogPosts = await getCollection<"posts">("posts", ({ data }) => {
-		if (import.meta.env.PROD && data.draft === true) return false;
-		if (isSeriesPart(data)) return false;
-		return true;
-	});
+	const allBlogPosts = await getRawSortedPosts({ includeSeriesParts: false });
 	const count: { [key: string]: number } = {};
 	allBlogPosts.forEach((post: { data: { category: string | null } }) => {
 		if (!post.data.category) {

@@ -264,7 +264,7 @@ lang: ''
 
 這是我在高一下進行的自主學習報告，是在全高一面前（也就是我的同學們面前）講講我在這段自主學習時期都做了些什麼。這篇的主題是：「從零開始製作一隻Discord Bot -- 北極企鵝」，內容涵蓋超豐富，有興趣的歡迎查看下面的所有資訊喔！
 
-## YouTube 影片鏈結：
+## YouTube 影片連結：
 
 <iframe width="100%" height="468" src="https://www.youtube.com/embed/fN8ZWX3BiTY?si=u_FqXTPglyqg_SIL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
@@ -280,7 +280,7 @@ lang: ''
 | 簡報軟體  | [Presenterm](https://github.com/mfontanini/presenterm) |
 | 檔案下載  | [MD](https://file.pg72.tw/share/Fe09FcaB) |
 
-## 簡報軟體鏈結：
+## 簡報軟體連結：
 ::github{repo="mfontanini/presenterm"}
 
 
@@ -364,7 +364,7 @@ lang: ''
 
 <li>🌰. 屬於自己的免費勞動力！</li>
 <li>🌰. 完全自學使用Python + Discord API</li>
-<li>🌰. 5100多行代碼都是自己寫的！（複製複製貼上貼上:D）</li>
+<li>🌰. 5100多行代碼都是自己寫的！（複製複製貼上貼上\:D）</li>
 </ul>
 <h1>給你們看一下我創了幾隻企鵝出來</h1>
 <p><img src="./assets/main2.png" alt="主要的北極企鵝的個人資料圖"></p>
@@ -411,7 +411,7 @@ lang: ''
 <p>有什麼特色？</p>
 </blockquote>
 <!-- new_line -->
-<p>特色其實不多，他就是我自己寫的一隻機器人而已:D</p>
+<p>特色其實不多，他就是我自己寫的一隻機器人而已\:D</p>
 <!-- new_line --></div>
 <footer class="slide-footer">
   <span class="left">https://pg72.tw/</span>

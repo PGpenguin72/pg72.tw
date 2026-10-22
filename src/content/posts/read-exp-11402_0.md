@@ -2,7 +2,7 @@
 title: 學習放手，不再被沈默成本打敗
 published: 2026-02-18
 updated: 2026-02-18
-description: '高二下的寒假作業，啊也是沒有要投稿，就這樣吧:D'
+description: '高二下的寒假作業，啊也是沒有要投稿，就這樣吧\:D'
 image: ''
 ogImage: 'https://pg72.tw/og/read-exp-114020.png'
 tags: ["閱讀心得", "一覺醒來：我背上了40起命案", "小說"]

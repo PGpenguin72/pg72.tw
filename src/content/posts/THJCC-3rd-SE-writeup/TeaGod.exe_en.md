@@ -3184,4 +3184,4 @@ That mean:
 ```txt
 Daily worship to the greatest, prettiest, and cutest Tea God Sister, who can not only write the cross-platform TeaGod OS with her feet, but also handle decompilation in her head with TeaGod Decompiler, tune a five-trillion-parameter TeaGod Agent by hand, build TeaGod Protocol with her knees, finish every CTF challenge with a single look, and even help create challenges—the tech god, Chairman of Lin Hai International, and the Lu Yu of cybersecurity 🛐 🛐 🛐
 ```
-These are some of the phrases we use to worship the Tea God. We used to post them in the THJCC server, so if you are interested in worshipping the Tea God with us, come post them too :D
+These are some of the phrases we use to worship the Tea God. We used to post them in the THJCC server, so if you are interested in worshipping the Tea God with us, come post them too \:D

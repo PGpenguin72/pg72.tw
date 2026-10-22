@@ -210,7 +210,7 @@ def hello():
 
 現在比較建議還是優先用方法一，縮排式容易在貼上時被 IDE 自動調整縮排。  
 > [!TIP]
-> 這裡其實的程式碼區塊有更完整更有趣的寫法，不過鄙人不才，不會寫，就請你們移駕去看原文啦:D
+> 這裡其實的程式碼區塊有更完整更有趣的寫法，不過鄙人不才，不會寫，就請你們移駕去看原文啦\:D
 ::link{url="https://fuwari.vercel.app/posts/expressive-code/" text="Fuwari Expressive Code Example" }
 ***
 
@@ -410,13 +410,13 @@ Fuwari 內建一整組提示框元件，很適合拿來做教學文章裡的「�
 
 ## 連結方塊
 
-如果你想要嵌入鏈結方塊，可以這麼輸入：
+如果你想要嵌入連結方塊，可以這麼輸入：
 ```markdown
 ::link{url="https://pg72.tw/posts/markdown-note/" text="Markdown筆記" icon="https://pg72.tw/avatar.png"}
 ```  
 ::link{url="https://pg72.tw/posts/markdown-note/" text="Markdown筆記"}
 
 ### 分項介紹：
-- url 為鏈結，也就是你的鏈結方塊導向的網站。
+- url 為連結，也就是你的連結方塊導向的網站。
 - text 為標題文字，你希望上方顯示啥文字就寫上去，預設填入網址。
 - icon 為圖片來源，有的時候可能沒辦法正常讀取到網站的icon，這時就可以直接指定圖片來源。

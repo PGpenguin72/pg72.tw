@@ -22,7 +22,7 @@ This article was translated into English by ChatGPT and may contain errors. For 
 # Challenge Minecraft???
 
 ![2026-08-12_00.12.04.png](./asset/chal.png)
-I've placed a lectern near this village, and there's a book here - I definitely did not hide the Flag here :D
+I've placed a lectern near this village, and there's a book here - I definitely did not hide the Flag here \:D
 
 ## Objective
 Find the lectern location shown in the image. Once you get there, you'll definitely be able to find the Flag... maybe?
@@ -285,7 +285,7 @@ After importing the data, select the version and enter the limits described in t
 Among these results, one particular coordinate, `114514, 72, 810`, is very stinky lol. So just TP there and read the book to find the Flag!
 
 :::note[Flag:]
-THJCC{M1n3Cr@f7_15_S0_FuNnY:D}
+THJCC{M1n3Cr@f7_15_S0_FuNnY\:D}
 :::
 
 ## Method 2

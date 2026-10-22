@@ -18,4 +18,4 @@ series:
 ![D3](./img/newhigh%20(it)/3.png)
 ![D4](./img/newhigh%20(it)/4.png)
 
-這題還沒學會:（ 等學會了再來寫解析哈:D
+這題還沒學會:（ 等學會了再來寫解析哈\:D

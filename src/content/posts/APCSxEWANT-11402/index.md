@@ -11,9 +11,9 @@ draft: false
 lang: ''
 ---
 
-這是我和姚禹晨一起做的一個報告喔:D 我自己當天好像有一丟丟緊張，所以才講話有點結巴結巴的。
+這是我和姚禹晨一起做的一個報告喔\:D 我自己當天好像有一丟丟緊張，所以才講話有點結巴結巴的。
 
-## YouTube 影片鏈結：
+## YouTube 影片連結：
 
 <iframe width="100%" height="468" src="https://www.youtube.com/embed/509SxpNkSMY?si=Oh6wCQ03weLv86SZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
@@ -29,7 +29,7 @@ lang: ''
 | 簡報軟體  | [slidev](https://github.com/slidevjs/slidev) |
 | 檔案下載  | [MD](https://file.pg72.tw/share/nIJy-8RZ) |
 
-## 簡報軟體鏈結：
+## 簡報軟體連結：
 ::github{repo="slidevjs/slidev"}
 
 <p></p>

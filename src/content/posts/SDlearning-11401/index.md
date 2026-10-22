@@ -2,10 +2,10 @@
 title: 高二上自主學習報告 高一場
 published: 2026-01-07
 updated: 2026-04-17
-description: '從零開始製作一隻 Discord Bot -- 北極企鵝'
+description: '從零開始製作一款遊戲 — 溶蝕...?'
 image: ""
 ogImage: 'https://pg72.tw/og/sdlearning-11302.png'
-tags: ["自主學習", "Discord", "Python", "Discord.py", "JSON"]
+tags: ["自主學習", "遊戲開發", "斜槓", "小專案", "Google App Script"]
 category: '報告'
 draft: false
 lang: ''
@@ -273,7 +273,7 @@ lang: ''
 
 這是我在高二上進行的自主學習的報告分享，也就是在全高一面前（學弟妹們）分享我的成果！這篇的主題是：「從零開始製作一款遊戲 — 溶蝕」，其實內容很有趣，有興趣的歡迎查看下面的所有資訊喔！
 
-## YouTube 影片鏈結：
+## YouTube 影片連結：
 
 <iframe width="100%" height="468" src="https://www.youtube.com/embed/RA4pnzebwfU?si=JGXcD2jF5nYKwxvo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
@@ -289,7 +289,7 @@ lang: ''
 | 簡報軟體  | [Presenterm](https://github.com/mfontanini/presenterm) |
 | 檔案下載  | [MD](https://file.pg72.tw/share/nj0aZsBh) |
 
-## 簡報軟體鏈結：
+## 簡報軟體連結：
 ::github{repo="mfontanini/presenterm"}
 
 

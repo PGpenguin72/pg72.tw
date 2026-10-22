@@ -15,7 +15,7 @@ export const devices: DeviceMap = {
 			image:
 				"https://cdsassets.apple.com/live/7WUAS350/images/tech-specs/iphone_15_pro.png",
 			specs: "白色鈦金屬 / 256GB",
-			description: "是主力機喔:D",
+			description: "是主力機喔\:D",
 			link: "https://support.apple.com/zh-tw/111829",
 		},
 		{
@@ -403,7 +403,7 @@ export const devices: DeviceMap = {
 			image:
 				"https://www.nintendo.com/jp/famicom/assets/img/top/portal/top_mv.webp",
 			specs: "沒有啥特別的規格哈",
-			description: "欸嘿，沒想到我家也有這個吧:D",
+			description: "欸嘿，沒想到我家也有這個吧\:D",
 			link: "https://www.nintendo.com/jp/famicom/index.html",
 		},
 	],

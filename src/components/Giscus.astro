@@ -2,10 +2,13 @@
 interface Props {
 	class?: string;
 	style?: string;
+	// When set, comments map to this fixed term instead of the page pathname.
+	term?: string;
 }
 
 const className = Astro.props.class;
 const style = Astro.props.style;
+const term = Astro.props.term;
 ---
 
 <section class:list={["card-base rounded-[var(--radius-large)] overflow-hidden", className]} style={style}>
@@ -14,7 +17,7 @@ const style = Astro.props.style;
     </div>
     <div class="border-t border-black/10 dark:border-white/10"></div>
     <div class="px-4 md:px-6 py-5">
-        <div id="giscus-container" class="giscus-wrap"></div>
+        <div id="giscus-container" class="giscus-wrap" data-term={term}></div>
     </div>
 </section>
 
@@ -34,7 +37,7 @@ const style = Astro.props.style;
 		lang: "zh-TW",
 	};
 
-	function createGiscusScript() {
+	function createGiscusScript(term) {
 		const script = document.createElement("script");
 		script.src = giscusConfig.src;
 		script.async = true;
@@ -43,7 +46,8 @@ const style = Astro.props.style;
 		script.setAttribute("data-repo-id", giscusConfig.repoId);
 		script.setAttribute("data-category", giscusConfig.category);
 		script.setAttribute("data-category-id", giscusConfig.categoryId);
-		script.setAttribute("data-mapping", giscusConfig.mapping);
+		script.setAttribute("data-mapping", term ? "specific" : giscusConfig.mapping);
+		if (term) script.setAttribute("data-term", term);
 		script.setAttribute("data-strict", giscusConfig.strict);
 		script.setAttribute("data-reactions-enabled", giscusConfig.reactionsEnabled);
 		script.setAttribute("data-emit-metadata", giscusConfig.emitMetadata);
@@ -57,7 +61,7 @@ const style = Astro.props.style;
 		const container = document.getElementById("giscus-container");
 		if (!container) return;
 		container.innerHTML = "";
-		container.appendChild(createGiscusScript());
+		container.appendChild(createGiscusScript(container.dataset.term));
 	}
 
 	loadGiscus();

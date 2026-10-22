@@ -1,0 +1,17 @@
+---
+import ArticlePage from "../components/ArticlePage.astro";
+import MainGridLayout from "../layouts/MainGridLayout.astro";
+import { getSortedPosts } from "../utils/content-utils";
+import { LATEST_NOW_SLUG } from "../utils/now-utils";
+
+const entries = await getSortedPosts();
+const entry = entries.find((post) => post.slug === LATEST_NOW_SLUG);
+---
+{entry ? <ArticlePage entry={entry} /> : (
+	<MainGridLayout title="近況 Now">
+		<article class="card-base px-6 py-8 sm:px-9">
+			<h1 class="text-3xl font-bold text-90">最近的我</h1>
+			<p class="mt-4 text-75">近況整理中，之後會在這裡分享最近專注的事。</p>
+		</article>
+	</MainGridLayout>
+)}

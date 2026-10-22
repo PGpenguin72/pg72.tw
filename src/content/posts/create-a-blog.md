@@ -5,7 +5,7 @@ updated: 2026-02-09
 description: '這是我創建自己的Blog紀錄，也拿來當一份小教學，有興趣的都可以來看喔！'
 image: ''
 ogImage: 'https://pg72.tw/og/create-a-blog.png'
-tags: ["Blog", "Fuwari", "GitHub", "Cloudfale", "Node.js", "Git"]
+tags: ["Blog", "Fuwari", "GitHub", "Cloudflare", "Node.js", "Git"]
 category: '筆記'
 draft: false 
 lang: ''
@@ -136,12 +136,12 @@ Fuwari 把網站的大部分設定集中在這個檔案中：`src/config.ts`。
   - `toc` 文章的目錄顯示
   - `favicon` 網站的圖標
 - navBarConfig （導覽欄設定）:  
-  - `links` 最上方導航欄顯示的鏈結
+  - `links` 最上方導航欄顯示的連結
 - profileConfig （個人資料設定） :  
   - `avatar` 你的頭像
   - `name` 你的名字
   - `bio` 你的簡介
-  - `links` 裡面放著你要導向的鏈結
+  - `links` 裡面放著你要導向的連結
 - licenseConfig （授權設定） : 
   - `enable` 狀態
   - `name` 授權的名稱

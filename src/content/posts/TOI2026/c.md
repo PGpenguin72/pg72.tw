@@ -16,4 +16,4 @@ series:
 ![C1](./img/brackets%20(it)/1.png)
 ![C2](./img/brackets%20(it)/2.png)
 
-這題還沒學會:（ 等學會了再來寫解析哈:D
+這題還沒學會:（ 等學會了再來寫解析哈\:D

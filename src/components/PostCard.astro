@@ -10,7 +10,8 @@ import PostMetadata from "./PostMeta.astro";
 
 interface Props {
 	class?: string;
-	entry: CollectionEntry<"posts">;
+	entry: CollectionEntry<"posts"> | CollectionEntry<"now">;
+	pinned?: boolean;
 	title: string;
 	url: string;
 	published: Date;
@@ -33,6 +34,7 @@ const {
 	image,
 	description,
 	style,
+	pinned = false,
 } = Astro.props;
 const className = Astro.props.class;
 
@@ -41,8 +43,8 @@ const hasCover = image !== undefined && image !== null && image !== "";
 const coverWidth = "28%";
 
 const { remarkPluginFrontmatter } = await entry.render();
-const seriesWordCount = entry.data.seriesWordCount;
-const seriesMinuteCount = entry.data.seriesMinuteCount;
+const seriesWordCount = entry.collection === "posts" ? entry.data.seriesWordCount : undefined;
+const seriesMinuteCount = entry.collection === "posts" ? entry.data.seriesMinuteCount : undefined;
 const wordCount =
 	seriesWordCount && seriesWordCount > 0
 		? seriesWordCount
@@ -61,6 +63,7 @@ const minuteCount =
         before:w-1 before:h-5 before:rounded-md before:bg-[var(--primary)]
         before:absolute before:top-[35px] before:left-[18px] before:hidden md:before:block
         ">
+            {pinned && <Icon name="fa6-solid:thumbtack" class="inline mr-2 text-xl text-[var(--primary)]" aria-label="置頂" />}
             {title}
             <Icon class="inline text-[2rem] text-[var(--primary)] md:hidden translate-y-0.5 absolute" name="material-symbols:chevron-right-rounded" ></Icon>
             <Icon class="text-[var(--primary)] text-[2rem] transition hidden md:inline absolute translate-y-0.5 opacity-0 group-hover:opacity-100 -translate-x-1 group-hover:translate-x-0" name="material-symbols:chevron-right-rounded"></Icon>
@@ -98,7 +101,7 @@ const minuteCount =
                   class="transition opacity-0 group-hover:opacity-100 scale-50 group-hover:scale-100 text-white text-5xl">
             </Icon>
         </div>
-        <ImageWrapper src={image} basePath={path.join("content/posts/", getDir(entry.id))} alt="Cover Image of the Post"
+        <ImageWrapper src={image} basePath={path.join("content", entry.collection, getDir(entry.id))} alt="Cover Image of the Post"
                   class="w-full h-full">
         </ImageWrapper>
     </a>}

@@ -18,7 +18,7 @@ series:
 # 題目 Minecraft???
 
 ![2026-08-12_00.12.04.png](./asset/chal.png)
-I've placed a lectern near this village, and there's a book here - I definitely did not hide the Flag here :D
+I've placed a lectern near this village, and there's a book here - I definitely did not hide the Flag here \:D
 
 ## Objective
 Find the lectern location shown in the image. Once you get there, you'll definitely be able to find the Flag... maybe?
@@ -281,7 +281,7 @@ If you've already figured out some of the coordinates, I don't think you need to
 這些結果中有一筆特定的數字，`114514, 72, 810`，非常的臭www 所以直接 TP 過去看書就可以找到 Flag 了！
 
 :::note[Flag:]
-THJCC{M1n3Cr@f7_15_S0_FuNnY:D}
+THJCC{M1n3Cr@f7_15_S0_FuNnY\:D}
 :::
 
 ## 方法二

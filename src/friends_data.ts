@@ -73,6 +73,12 @@ export const friends: Friend[] = [
 		description: "一個認真的maimai玩家",
 	},
 	{
+		name: "yuyoru",
+		url: "https://theoyu314159.github.io/",
+		avatar: "https://i.meee.com.tw/AfoBYGz.png",
+		description: "一直被電嗚嗚嗚",
+	},
+	{
 		name: "zackzheng可樂",
 		url: "https://zack.siiway.org/",
 		avatar: "/friends/zackzheng可樂.png",
@@ -127,6 +133,18 @@ export const friends: Friend[] = [
 		url: "https://www.instagram.com/1235cow/ ",
 		avatar: "/friends/那個怪人或你決定好了.png",
 		description: "那個瑟瑟現在把min卡封的立志當電神的胖子",
+	},
+	{
+		name: "辰",
+		url: "https://www.instagram.com/chenshuo_0422/",
+		avatar: "/friends/辰.jpg",
+		description: "(◐‿◑)",
+	},
+	{
+		name: "吳鑽",
+		url: "https://wuzuantw.com/",
+		avatar: "https://wuzuantw.com/images/wuzuan.png",
+		description: "鑽鑽託管，讚",
 	},
 	{
 		name: "阿太",

@@ -13,7 +13,10 @@ function joinUrl(...parts: string[]): string {
 }
 
 export function getPostUrlBySlug(slug: string): string {
-	return url(`/posts/${slug}/`);
+	if (slug === "now") return url("/now/");
+	return slug.startsWith("now/")
+		? url(`/now/${slug.slice(4)}/`)
+		: url(`/posts/${slug}/`);
 }
 
 export function getTagUrl(tag: string): string {

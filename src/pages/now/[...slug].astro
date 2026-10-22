@@ -1,0 +1,19 @@
+---
+import ArticlePage from "../../components/ArticlePage.astro";
+import { getSortedPosts } from "../../utils/content-utils";
+
+export async function getStaticPaths() {
+	const posts = await getSortedPosts();
+	// The latest entry is only served at /now/.
+	return posts
+		.filter(
+			(entry) => entry.collection === "now" && entry.slug.startsWith("now/"),
+		)
+		.map((entry) => ({
+			params: { slug: entry.slug.slice(4) },
+			props: { entry },
+		}));
+}
+const { entry } = Astro.props;
+---
+<ArticlePage entry={entry} />
