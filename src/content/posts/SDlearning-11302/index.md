@@ -4,7 +4,7 @@ published: 2025-06-19
 updated: 2026-01-30
 description: '從零開始製作一隻 Discord Bot -- 北極企鵝'
 image: ""
-ogImage: 'https://pg72.tw/og/sdlearning-11302.png'
+ogImage: ''
 tags: ["自主學習", "Discord", "Python", "Discord.py", "JSON"]
 category: '報告'
 draft: false 

@@ -4,7 +4,7 @@ published: 2026-03-17
 updated: 2026-03-17
 description: "第一次報名這種競賽，就來說說心得吧！"
 image: "./img/TOI.png"
-ogImage: 'https://pg72.tw/og/thjcc-2026-writeup-0.png'
+ogImage: ''
 tags: [TOI, C++]
 category: 程式
 draft: false

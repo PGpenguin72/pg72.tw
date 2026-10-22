@@ -4,7 +4,7 @@ published: 2025-10-28
 updated: 2026-02-01
 description: '這是我們學校作業”運動寫真“，我做的主題是音遊，我拿100分喔～有興趣可以看看。'
 image: ''
-ogImage: 'https://pg72.tw/og/game-portrait.png'
+ogImage: ''
 tags: ["音遊", "運動寫真", "Chunithm", "海報"]
 category: '作業'
 draft: false

@@ -4,7 +4,7 @@ published: 2026-02-22
 updated: 2026-02-22
 description: '等下次可以投稿的時候再投投看吧：Ｄ'
 image: ''
-ogImage: 'https://pg72.tw/og/read-exp-11402.png'
+ogImage: ''
 tags: ["閱讀心得", "世界盡頭的咖啡館", "小說"]
 category: '作業'
 draft: false

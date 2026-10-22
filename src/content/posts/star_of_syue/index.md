@@ -4,7 +4,7 @@ published: 2025-12-21
 updated: 2026-01-29
 description: '一個很好看的星空，反正就點進來看看吧\:D'
 image: './cover.png'
-ogImage: 'https://pg72.tw/og/star-of-syue.png'
+ogImage: ''
 tags: ["星空", "iPhone"]
 category: '天文攝影'
 draft: false 

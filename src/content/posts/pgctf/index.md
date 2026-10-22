@@ -4,7 +4,7 @@ published: 2026-03-09
 updated: 2026-03-09
 description: 第一次做了一個大混雜CTF，但好像太雜沒人玩：（
 image: ""
-ogImage: 'https://pg72.tw/og/pgctf.png'
+ogImage: ''
 tags: [CTF, 資安]
 category: 程式
 ---

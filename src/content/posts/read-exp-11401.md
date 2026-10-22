@@ -4,7 +4,7 @@ published: 2025-09-01
 updated: 2026-02-09
 description: '高二上的暑假作業，反正也沒有要投稿這樣....'
 image: ''
-ogImage: 'https://pg72.tw/og/read-exp-11401.png'
+ogImage: ''
 tags: ["閱讀心得", "蛤蟆先生去看心理師", "小說"]
 category: '作業'
 draft: false 

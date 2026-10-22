@@ -4,7 +4,7 @@ published: 2025-02-10
 updated: 2026-02-09
 description: '高一下學期的寒假作業，閱讀心得，反正就是為了寫漫畫而寫的題材，有興趣的可以看一下喔（？'
 image: ''
-ogImage: 'https://pg72.tw/og/read-exp-11302.png'
+ogImage: ''
 tags: ["閱讀心得", "地縛少年花子君", "漫畫"]
 category: '作業'
 draft: false 

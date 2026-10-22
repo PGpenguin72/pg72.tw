@@ -19,6 +19,7 @@ import { licenseConfig } from "src/config";
 import { profileConfig, siteConfig } from "../config";
 import { formatDateToYYYYMMDD } from "../utils/date-utils";
 import { getNowCommentTerm } from "../utils/now-utils";
+import { getOgImagePath } from "../utils/og-image";
 import ImageWrapper from "./misc/ImageWrapper.astro";
 import PostMetadata from "./PostMeta.astro";
 
@@ -28,7 +29,8 @@ interface Props {
 
 const { entry } = Astro.props;
 const { Content, headings, remarkPluginFrontmatter } = await entry.render();
-const ogImage = entry.data.ogImage || entry.data.image || undefined;
+const ogImage =
+	entry.data.ogImage || new URL(getOgImagePath(entry), Astro.site).href;
 const seriesId = entry.data.series?.id;
 let seriesTitle = "";
 let seriesMain:

@@ -4,7 +4,7 @@ published: 2026-02-08
 updated: 2026-02-09
 description: '這是我創建自己的Blog紀錄，也拿來當一份小教學，有興趣的都可以來看喔！'
 image: ''
-ogImage: 'https://pg72.tw/og/create-a-blog.png'
+ogImage: ''
 tags: ["Blog", "Fuwari", "GitHub", "Cloudflare", "Node.js", "Git"]
 category: '筆記'
 draft: false 

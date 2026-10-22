@@ -4,7 +4,7 @@ published: 2026-01-07
 updated: 2026-04-17
 description: '從零開始製作一款遊戲 — 溶蝕...?'
 image: ""
-ogImage: 'https://pg72.tw/og/sdlearning-11302.png'
+ogImage: ''
 tags: ["自主學習", "遊戲開發", "斜槓", "小專案", "Google App Script"]
 category: '報告'
 draft: false

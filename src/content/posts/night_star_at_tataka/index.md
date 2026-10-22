@@ -4,7 +4,7 @@ published: 2026-02-11
 updated: 2026-02-15
 description: '一個很酷的星軌，趕快來看看吧！'
 image: './cover.png'
-ogImage: 'https://pg72.tw/og/night-star-at-tataka.png'
+ogImage: ''
 tags: ["星空", "星軌", "Gopro"]
 category: '天文攝影'
 draft: false 
