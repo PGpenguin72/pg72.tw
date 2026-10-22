@@ -4,10 +4,12 @@ import { getSortedPosts } from "../../utils/content-utils";
 
 export async function getStaticPaths() {
 	const posts = await getSortedPosts();
-	return posts.filter((entry) => entry.collection === "posts").map((entry) => ({
-		params: { slug: entry.slug },
-		props: { entry },
-	}));
+	return posts
+		.filter((entry) => entry.collection === "posts")
+		.map((entry) => ({
+			params: { slug: entry.slug },
+			props: { entry },
+		}));
 }
 const { entry } = Astro.props;
 ---

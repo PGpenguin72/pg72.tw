@@ -43,8 +43,10 @@ const hasCover = image !== undefined && image !== null && image !== "";
 const coverWidth = "28%";
 
 const { remarkPluginFrontmatter } = await entry.render();
-const seriesWordCount = entry.collection === "posts" ? entry.data.seriesWordCount : undefined;
-const seriesMinuteCount = entry.collection === "posts" ? entry.data.seriesMinuteCount : undefined;
+const seriesWordCount =
+	entry.collection === "posts" ? entry.data.seriesWordCount : undefined;
+const seriesMinuteCount =
+	entry.collection === "posts" ? entry.data.seriesMinuteCount : undefined;
 const wordCount =
 	seriesWordCount && seriesWordCount > 0
 		? seriesWordCount
