@@ -6,7 +6,7 @@ description: "簡單來說就是把常用的AI丟出來跟大家分享而已！"
 ogImage: ''
 tags: ["AI"]
 category: 筆記
-draft: true
+draft: false
 ---
 
 :::important
